@@ -10,7 +10,7 @@ We as students want to build this application because we understand the process 
 
 ## Architectural Diagram
 
-![Architectural Diagram](imgs/diagram.png)
+![Architectural Diagram](imgs/diagram.PNG)
 
 ## User Stories
 | Priority      | User | Description      | Technical Implementation |

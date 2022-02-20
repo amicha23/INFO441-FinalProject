@@ -25,11 +25,14 @@ We as students want to build this application because we understand the process 
 ## Endpoints
 
 **Authentication**
--  /signin
+
+- /signin
   - Creates a new session for the user. Responds with a message to the user notifying that they have successfully logged in to their account.
+
 
 - /signout
   - Destroys the session for the user. Responds with a message to the user notifying that they have successfully logged out of their account.
+
 
 - /error
   - Respond to login and server-side errors.

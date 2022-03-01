@@ -8,6 +8,7 @@ import usersRouter from './routes/users.js';
 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import Post from './db.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,5 +23,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(function(req, res, next){
+    req.Post = Post;
+    next();
+})
 
 export default app;

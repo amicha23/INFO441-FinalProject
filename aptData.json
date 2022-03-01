@@ -1,0 +1,53 @@
+
+[
+    {
+        "placeName": "U20",
+        "area":"University of Washington ",
+        "size":200,
+        "distanceAway":0.5,
+        "price":1450,
+        "description":"LOCATION, LOCATION, LOCATION! You just simply cannot miss out on this!",
+        "leasingTerm": 1
+    },
+
+    {
+        "placeName": "Triplink",
+        "area":"University of Washington ",
+        "size":1800,
+        "distanceAway":0.75,
+        "price":1850,
+        "description":"This view is everything!",
+        "leasingTerm": 1
+    },
+
+    {
+        "placeName": "Greenplace",
+        "area":"University of Washington ",
+        "size":4500,
+        "distanceAway":1.5,
+        "price":850,
+        "description":"You just simply cannot miss out on this deal!",
+        "leasingTerm": 1
+    },
+    
+    {
+        "placeName": "Brita",
+        "area":"University of Washington ",
+        "size":500,
+        "distanceAway":0.5,
+        "price":1450,
+        "description":"Small but very cute!",
+        "leasingTerm": 1
+    },
+
+    {
+        "placeName": "LiveNLove",
+        "area":"University of Washington ",
+        "size":800,
+        "distanceAway":0.85,
+        "price":1050,
+        "description":"Modern everything!",
+        "leasingTerm": 1
+    }
+    ]
+

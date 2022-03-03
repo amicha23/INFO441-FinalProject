@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Yashasvi Joginapally, Fanny Mai, Andrew Michaels, Alex Taylor">
+        <meta name="description" content="Add and view apartment listings near The University of Washington, Seattle">
+        <title>Student Apartments</title>
+        <!-- css links -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="img/home-icon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-e)JMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Q10h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="js/viewlisting.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-img" aria-hidden="true">&nbsp;</span>Student Apartments
+                </a>
+
+                <button class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <ul class="nav-menu" id="nav-menu2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Saved Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="landing.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <a class="btn btn-dark goback" href="index.html" role="button">Back to all</a>
+                <div>
+                    <h2 class="detail-titles">One Bedroom at Savanna Apartment</h2>
+                    <flex class="center">
+                        <img class="viewImg" src="img/living-room.jpg" alt="photo of the living room of the apartment" loading="lazy">
+                    </flex>
+                </div>
+
+                <div class="row">
+                    <div class="card-row">
+                        <div class="column mb-4">
+                            <p class="card-text">
+                                Hi! My name is Anna and I am subleasing my unit in a two-bedroom apartment. 
+                                I am looking for a girl to take over my lease for the summer as I will be at home. 
+                                My roommates are 3 other girls who go to UW and are super sweet!
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <div class="card mb-4">
+                                <div class="description card-body">
+                                    <div>
+                                        <p class="card-text">Location: Savanna located on 45th</p>
+                                        <p class="card-text">Months available: June - August</p>
+                                        <p class="card-text">Number of roommates: 2</p>
+                                        <p class="card-text">Features: in-unit laundry, view, open deck</p>
+                                        <p class="card-text">Price: $1000 - 1200 per month</p>
+                                        <a class="saved btn btn-dark" href="#" role="button">
+                                            <span class="saved-logo-view" aria-label="save listing button">&nbsp;</span>Save Listing
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="detail-titles">Location</h2>
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var test = {
+                            lat: 47.6593,
+                            lng: 117.4216
+                        };
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 4,
+                            center: test
+                        });
+                        var marker = new google.maps.Marker({
+                            position: test,
+                            map: map
+                        });
+                    }
+                </script>
+            </div>
+
+            <div class="formDiv">
+                <form>
+                    <label for="name"></label>
+                    <input class="formStyle card-text" placeholder="Name" type="text" id="name" name="name"><br>
+
+                    <label for="email"></label>
+                    <input class="formStyle card-text" placeholder="Email" type="text" id="email" name="email"><br>
+
+                    <label for="phone"></label>
+                    <input class="formStyle card-text" placeholder="Phone Number" type="text" id="phone" name="phone"><br>
+
+                    <label for="contactmessage"></label>
+                    <textarea class="card-text" id="contactmessage" name="contactmessage" placeholder="Message..."></textarea><br>
+
+                    <input class="card-text contactlister" type="submit" value="Contact Lister">
+                </form>
+            </div>
+        </main>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnngaP8VoZ5zsU880YlHOmUsEg35eYpOE&callback=initMap&libraries=&v=weekly" async></script>
+
+        <footer>
+            <p>Copyright© StudentApartments, Inc.</p>
+        </footer>
+    </body>
+</html>

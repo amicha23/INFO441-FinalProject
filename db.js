@@ -12,14 +12,14 @@ async function dbConnect() {
   const apartmentSchema = new mongoose.Schema({
     placeName: String,
     area: String,
-    size: Number, 
+    size: Number,
     distanceAway: Number,
     price: Number,
     description: String,
     leasingterm: Number
   })
   db.Apartment = mongoose.model('Apartment', apartmentSchema)
-  
+
   const userSchema = new mongoose.Schema({
     username: String,
     saved: [String],
@@ -31,4 +31,4 @@ async function dbConnect() {
   console.log("created db schemas and models")
 }
 
-export default Post;
+export default db;

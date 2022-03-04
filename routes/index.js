@@ -30,10 +30,10 @@ router.post('/', async function(req, res) {
 
 router.get('/', async function(req, res) {
   try {
-   
 
 
-    
+
+
   }catch(err) {
     return res.status(400).json({
       message: 'Could not create a new post'

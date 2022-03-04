@@ -1,16 +1,16 @@
 
+import { Console } from 'console';
 import express from 'express'
 import Post from '../db.js'
 var router = express.Router();
 
+const isEmptyObject = (object) => {
+  return Object.keys(object).length === 0;
+}
 
-/* GET home page. */
-router.get('/', async function(req, res, next) {
-  const allPosts = await Post.find()
-  res.json({ posts:allPosts})
-});
 
-router.post('/', async function(req, res) {
+// create a new post
+router.post('/api/post', async function(req, res) {
   try {
    const {placeName, area, size, distanceAway, price, description, leasingterm} = req.body;
     const newPost = new Post({ placeName, area, size, distanceAway, price, description, leasingterm});
@@ -28,15 +28,31 @@ router.post('/', async function(req, res) {
   }
 })
 
-router.get('/', async function(req, res) {
-  try {
+// gets all posts or filters by passed params
+router.get('/api/post', async function(req, res) {
+  try { 
 
+    if(isEmptyObject(req.query)) {
+      const allPosts = await Post.find()
+      return res.json({ status: 'success', data: allPosts})
+    }else {
+      const { distanceAway, minPrice, maxPrice, minSize, maxSize } = req.query;
 
+      const filteredPosts = await Post.find({
+        $and: [
+          { distanceAway: { $lte: distanceAway} },
+          { price: { $lte: maxPrice || 1000000, $gte: minPrice || 0 } },
+          { size: { $lte: maxSize || 1000000, $gte: minSize || 0 } }
+        ]
+      })
+      return res.json({status: 'success', data: filteredPosts})
+    }
 
-
+    
   }catch(err) {
+    console.log('Error is: ', err)
     return res.status(400).json({
-      message: 'Could not create a new post'
+      message: 'Could not get posts'
     })
   }
 })

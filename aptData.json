@@ -1,53 +1,483 @@
-
-[
-    {
-        "placeName": "U20",
-        "area":"University of Washington ",
-        "size":200,
-        "distanceAway":0.5,
-        "price":1450,
-        "description":"LOCATION, LOCATION, LOCATION! You just simply cannot miss out on this!",
-        "leasingTerm": 1
-    },
-
-    {
-        "placeName": "Triplink",
-        "area":"University of Washington ",
-        "size":1800,
-        "distanceAway":0.75,
-        "price":1850,
-        "description":"This view is everything!",
-        "leasingTerm": 1
-    },
-
-    {
-        "placeName": "Greenplace",
-        "area":"University of Washington ",
-        "size":4500,
-        "distanceAway":1.5,
-        "price":850,
-        "description":"You just simply cannot miss out on this deal!",
-        "leasingTerm": 1
-    },
-    
-    {
-        "placeName": "Brita",
-        "area":"University of Washington ",
-        "size":500,
-        "distanceAway":0.5,
-        "price":1450,
-        "description":"Small but very cute!",
-        "leasingTerm": 1
-    },
-
-    {
-        "placeName": "LiveNLove",
-        "area":"University of Washington ",
-        "size":800,
-        "distanceAway":0.85,
-        "price":1050,
-        "description":"Modern everything!",
-        "leasingTerm": 1
-    }
-    ]
-
+{
+    "listings": [{
+                "id": 1,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "july 2021 - july 2022",
+                "price": "1400",
+                "roommates": "1",
+                "features": "studio, open kitchen, rooftop.",
+                "image": "img/room5.jpg"
+            },
+            {
+                "id": 2,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1000",
+                "roommates": "2",
+                "features": "two bedrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 3,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "may 2021 - may 2022",
+                "price": "1100",
+                "roommates": "3",
+                "features": "two bathrooms, balony, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 4,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "june 2021 - june 2022",
+                "price": "1200",
+                "roommates": "2",
+                "features": "two bathrooms, washing machine, large kitchen, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 5,
+                "listingName": "Kennedy Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1400",
+                "roommates": "1",
+                "features": "1 bedroom, balony, large kitchen.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 6,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1500",
+                "roommates": "0",
+                "features": "two bathrooms, washer, dryer, large kitchen.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 7,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1600",
+                "roommates": "2",
+                "features": "two bathrooms, washing machine, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 8,
+                "listingName": "Kennedy Apartments",
+                "location": "45th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1700",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 9,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1800",
+                "roommates": "2",
+                "features": "two bathrooms, washer, dryer, stairs.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 10,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1800",
+                "roommates": "2",
+                "features": "two bathrooms, washer, dryer, large kitchen, stairs.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 11,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "june 2021 - june 2022",
+                "price": "1500",
+                "roommates": "5",
+                "features": "three bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 12,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1200",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 13,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1000",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 14,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1700",
+                "roommates": "5",
+                "features": "three bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 15,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1300",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 16,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1400",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 17,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1050",
+                "roommates": "5",
+                "features": "four bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 18,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1150",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 19,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "june 2021 - june 2022",
+                "price": "1100",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 20,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1600",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 21,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1800",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 22,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1700",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 23,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1400",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 24,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1050",
+                "roommates": "5",
+                "features": "three bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 25,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1000",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 26,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1500",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 27,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1600",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 28,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1250",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 29,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1100",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 30,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "june 2021 - june 2022",
+                "price": "1150",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 31,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1200",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 32,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1700",
+                "roommates": "1",
+                "features": "studio, balony, large kitchen, stairs.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 33,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1800",
+                "roommates": "0",
+                "features": "one bedroom, large kitchen, stairs.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 34,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1300",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 35,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1100",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 36,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "june 2021 - june 2022",
+                "price": "1350",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 37,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1500",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 38,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1400",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 39,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1300",
+                "roommates": "2",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 40,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1200",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 41,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "july 2021 - july 2022",
+                "price": "1050",
+                "roommates": "4",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 42,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1200",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 43,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1600",
+                "roommates": "0",
+                "features": "studio, washer, dryer, stairs.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 44,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1200",
+                "roommates": "1",
+                "features": "studio, balony, stairs, rooftop.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 45,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "june 2021 - june 2022",
+                "price": "1150",
+                "roommates": "3",
+                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
+                "image": "img/living-room.jpg"
+            },
+            {
+                "id": 46,
+                "listingName": "Savannah Apartments",
+                "location": "45th st",
+                "duration": "sept 2021 - sept 2022",
+                "price": "1500",
+                "roommates": "1",
+                "features": "one bedroom, large kitchen, stairs.",
+                "image": "img/kitchen.jpeg"
+            },
+            {
+                "id": 47,
+                "listingName": "the M Apartments",
+                "location": "4700 Brooklyn Ave",
+                "duration": "june 2021 - june 2022",
+                "price": "1400",
+                "roommates": "1",
+                "features": "studio, balony, rooftop.",
+                "image": "img/house1.jpg"
+            },
+            {
+                "id": 48,
+                "listingName": "Twelve at U District",
+                "location": "12th st",
+                "duration": "aug 2021 - aug 2022",
+                "price": "1000",
+                "roommates": "3",
+                "features": "two bathrooms, balony, stairs.",
+                "image": "img/living-room.jpg"
+            }
+        ]
+}

@@ -1,4 +1,5 @@
 async function init(){
+    loadUser()
 }
 
 async function saveUser(){

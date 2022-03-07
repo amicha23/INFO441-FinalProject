@@ -11,6 +11,8 @@ import usersRouter from './routes/users.js';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import db from './db.js';
+//import Post from './db.js';
+//import db from './db.js';
 
 const appSettings = {
   appCredentials: {
@@ -42,6 +44,7 @@ app.use(sessions({
     cookie: { maxAge: oneDay },
     resave: false
 }))
+
 
 
 const msid = new msIdExpress.WebAppAuthClientBuilder(appSettings).build();

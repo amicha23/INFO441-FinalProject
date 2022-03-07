@@ -31,4 +31,5 @@ async function dbConnect() {
   console.log("created db schemas and models")
 }
 
+
 export default db;

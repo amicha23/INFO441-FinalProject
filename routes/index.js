@@ -1,7 +1,6 @@
 
 import { Console } from 'console';
 import express from 'express'
-import Post from '../db.js'
 var router = express.Router();
 
 const isEmptyObject = (object) => {
@@ -13,7 +12,7 @@ const isEmptyObject = (object) => {
 router.post('/api/post', async function(req, res) {
   try {
    const {placeName, area, size, distanceAway, price, description, leasingterm} = req.body;
-    const newPost = new Post({ placeName, area, size, distanceAway, price, description, leasingterm});
+    const newPost = new req.db.Apartment({ placeName, area, size, distanceAway, price, description, leasingterm});
     await newPost.save();
     if(newPost) {
     return res.json({
@@ -33,14 +32,15 @@ router.get('/api/post', async function(req, res) {
   try { 
 
     if(isEmptyObject(req.query)) {
-      const allPosts = await Post.find()
+      console.log('Req db is: ', req.db)
+      const allPosts = await req.db.Apartment.find()
       return res.json({ status: 'success', data: allPosts})
     }else {
       const { distanceAway, minPrice, maxPrice, minSize, maxSize } = req.query;
 
-      const filteredPosts = await Post.find({
+      const filteredPosts = await req.db.Apartment.find({
         $and: [
-          { distanceAway: { $lte: distanceAway} },
+          { distanceAway: { $lte: distanceAway || 10 } },
           { price: { $lte: maxPrice || 1000000, $gte: minPrice || 0 } },
           { size: { $lte: maxSize || 1000000, $gte: minSize || 0 } }
         ]

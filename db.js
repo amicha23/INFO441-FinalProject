@@ -16,7 +16,9 @@ async function dbConnect() {
     distanceAway: Number,
     price: Number,
     description: String,
-    leasingterm: Number
+    leasingterm: String,
+    roommates: Number,
+    features: String
   })
   db.Apartment = mongoose.model('Apartment', apartmentSchema)
 

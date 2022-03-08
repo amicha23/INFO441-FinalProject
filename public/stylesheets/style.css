@@ -1,12 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* for overall html pages */
 
 html {
   height: 100%;
-  font-size: 62%;
+  font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
 }
 
+
+/* any top level heading */
+
 h1 {
   font-size: 20px;
+  /* margin-bottom: 2em; */
   font-weight: 600;
   text-align: center;
 }
@@ -19,7 +31,8 @@ h1 {
   font-size: 25px;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 15px;
   font-weight: 600;
 }
@@ -28,21 +41,31 @@ h3 {
   font-size: 20px;
 }
 
-.card-text, .card-title {
+.card-text,
+.card-title {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   font-weight: 300;
 }
+
+
+/*specialized title for available listings*/
 
 .available {
   font-weight: 800;
   padding-bottom: 0.5em;
 }
 
-h2 > span {
+
+/* adding changes to some h2 headers */
+
+h2>span {
   font-size: 15px;
   font-weight: 200;
 }
+
+
+/* NAVIGATION/MENU BAR */
 
 li {
   list-style: none;
@@ -111,7 +134,7 @@ a {
 .nav-logo {
   font-size: 3rem;
   font-weight: 600;
-  color: rgb(47, 47, 47)
+  color: rgb(47, 47, 47);
 }
 
 span.logo-img {
@@ -126,48 +149,62 @@ span.logo-img {
 
 @media only screen and (max-width: 768px) {
   .nav-logo {
-    font-size: 2rem;
+      font-size: 2rem;
   }
   span.logo-img {
-    margin-left: 0.2em;
+      margin-left: 0.2em;
   }
   .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    z-index: 9999;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      z-index: 9999;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav-menu.active {
-    left: 0;
+      left: 0;
   }
   .nav-item {
-    margin: 2.5rem 0;
+      margin: 2.5rem 0;
   }
   .hamburger {
-    display: block;
-    cursor: pointer;
+      display: block;
+      cursor: pointer;
   }
   .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+      opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-4px) rotate(-45deg);
+      transform: translateY(-4px) rotate(-45deg);
   }
+}
+
+
+/* MAIN */
+
+
+/* Container for everything in main */
+
+.container {
+  display: flex;
+  margin-top: 2em;
 }
 
 .title {
   margin-top: 2em;
 }
+
+
+/* PRICE AND ROOMMATES FILTER */
 
 .filterby {
   margin-top: 5em;
@@ -180,11 +217,13 @@ span.logo-img {
   font-size: 12px;
 }
 
-#pricefilterbtn, #roommatefilterbtn {
+#pricefilterbtn,
+#distanceAwayfilterbtn {
   background-color: white;
 }
 
-#pricefilter, #roommatefilter {
+#pricefilter,
+#distanceAwayfilter {
   display: none;
 }
 
@@ -193,14 +232,17 @@ span.logo-img {
   margin-right: 3em;
 }
 
-.searchBox {
+
+/* SEARCHBOX */
+
+.searchBox{
   width: 50%;
   margin-left: 4em;
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-input {
+input{
   height: 2.5rem;
   font-size: 1rem;
   padding: .5rem;
@@ -220,14 +262,23 @@ input {
   margin-left: 3em;
 }
 
+
+/* The "show" class is added to the filtered elements */
+
 .show {
   display: block;
 }
+
+
+/* CARDS */
 
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* margin-top: 3em; */
+  /* margin-left: 1em;
+  margin-right: 1em; */
 }
 
 .card-row {
@@ -243,6 +294,9 @@ img {
   border-radius: 10px;
 }
 
+
+/* every listing will be displayed on a card */
+
 .card {
   border-radius: 0px;
   border: none;
@@ -251,8 +305,12 @@ img {
 
 .btn {
   font-size: 12px;
+  /* background-color: rgb(79, 104, 147); */
   border-color: rgb(152, 152, 152);
 }
+
+
+/* for the view listing/nav bar buttons on card when user hovers over them */
 
 .btn:hover {
   background-color: rgb(253, 251, 251);
@@ -260,72 +318,92 @@ img {
 }
 
 .saved-logo {
+  /* padding-left: 1em; */
   padding: 0.5em;
-  background-image: url('../navbookmarkwhite.png');
+  background-image: url('../img/navbookmarkwhite.png');
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.view .saved {
+.view,
+.saved {
   margin-top: 0.5em;
 }
 
+/* FOR SCREENS LARGER THAN 768PX */
 @media (min-width: 768px) {
   .card {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-    border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.16);
+      border-radius: 10px;
   }
   .center {
-    margin: 2em;
-    margin-top: 3em;
+      margin: 2em;
+      margin-top: 3em;
   }
   .viewImg {
-    height: 60vh;
-    width: 55%;
-    /* max-width: 80%; */
+      height: 50vh;
+      max-width: 80%;
   }
 }
 
+/* FOR SCREENS LARGER THAN 992PX */
 @media (min-width: 992px) {
   .row {
-    margin-left: 12em;
-    margin-right: 12em;
+      margin-left: 12em;
+      margin-right: 12em;
   }
   .filterby {
-    margin-left: 13em;
+      margin-left: 13em;
   }
-  .card-text, .card-title {
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
+  .card-text,
+  .card-title {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
   }
   .formContainer {
-    margin-right: 12em;
+      margin-right: 12em;
   }
   .addListBtn {
-    margin-right: 7em;
+      margin-right: 7em;
   }
   .right {
-    float: right;
-    margin-right: 5em;
+      float: right;
+      margin-right: 5em;
   }
   #pricefilterbtn {
-    margin-left: 0em;
+      margin-left: 0em;
   }
-  .searchBox {
-    margin-left: 0em;
+
+  .searchBox{
+      margin-left: 0em;
   }
 }
+
+
+/* to align the sliders */
 
 div#wrapper {
   display: inline-block;
 }
 
+
+/* VIEW LISTING PAGE */
+
+
+/* Create two unequal columns that sits next to each other */
+
+
+/* Sidebar/left column */
+
 .main {
   flex: 60%;
+  /* Set the width of the main content */
   background-color: white;
+  /* White background color */
   padding: 20px;
+  /* Some padding */
 }
 
 .detail-titles {
@@ -349,15 +427,20 @@ span.saved-logo-view {
   background-repeat: no-repeat;
 }
 
+
+/* styling view listing image  */
+
 .center {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 0.5em;
-  margin-right: 1em;
+  margin-top: 1em;
 }
+
 .viewImg {
+  /* height: 30vh; */
   max-width: 80%;
 }
 
@@ -365,8 +448,12 @@ span.saved-logo-view {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  /* flex: 1; */
   margin-right: 5em;
 }
+
+
+/* CONTACT LISTER FORM */
 
 .formDiv {
   text-align: center;
@@ -375,14 +462,18 @@ span.saved-logo-view {
   border-top: 1px solid #E2E8F0;
 }
 
-input, textarea {
+input,
+textarea {
   width: 85%;
   margin: 5px 0;
   padding: 8px;
   resize: vertical;
 }
 
-input[type=text], input[type=number], input[type=file], select,
+input[type=text],
+input[type=number],
+input[type=file],
+select,
 textarea {
   width: 100%;
   padding: 12px;
@@ -396,9 +487,13 @@ textarea {
   height: 200px;
 }
 
-.formStyle:hover, textarea:hover {
+.formStyle:hover,
+textarea:hover {
   border: 1px solid #aaa;
 }
+
+
+/* ADD LISTING FORM */
 
 label {
   padding: 12px 12px 12px 0;
@@ -431,18 +526,23 @@ button[type=submit] {
 
 #map {
   height: 300px;
+  /* The height is 400 pixels */
   width: 80%;
+  /* The width is the width of the web page */
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
 }
+
+
+/* ABOUT/LANDING PAGE */
 
 .format {
   color: #E2E8F0;
 }
 
 #landpage {
-  background-image: url('../img/silhouette-city-with-purple-color-vector-8089897.jpeg');
+  background-image: url('/img/silhouette-city-with-purple-color-vector-8089897.jpeg');
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -493,6 +593,9 @@ footer {
   color: #fff;
 }
 
+
+/* FILTER SLIDERS FOR PRICE AND DISTANCE AWAY */
+
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
@@ -511,7 +614,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 15px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -6px;
@@ -521,7 +624,7 @@ input[type=range]:focus {
   outline: none;
 }
 
-input[type=range]focus::-webkit-slider-runnable-track {
+input[type=range]:focus::-webkit-slider-runnable-track {
   background: rgb(47, 47, 47);
 }
 
@@ -550,7 +653,7 @@ input[type=range]focus::-webkit-slider-runnable-track {
   border-radius: 6px;
 }
 
-.range-value span::before {
+.range-value span:before {
   content: "";
   position: absolute;
   width: 0;

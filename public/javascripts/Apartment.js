@@ -5,12 +5,12 @@ pricebutton.addEventListener('click', togglePrice);
 
 function togglePrice() {
     let pricefilter = document.querySelector("#pricefilter");
-    if (pricefilter.style.display === "inline-block") {
-        pricefilter.style.display = "none";
+    if (pricefilter.style.display === "none") {
+        pricefilter.style.display = "inline-block";
         pricebutton.style.background = "rgb(47, 47, 47)";
         pricebutton.style.color = "white";
     } else {
-        pricefilter.style.display = "inline-block";
+        pricefilter.style.display = "none";
         pricebutton.style.background = "white";
         pricebutton.style.color = "black";
     }
@@ -21,12 +21,12 @@ distanceAwaybutton.addEventListener('click', toggleDistanceAway);
 
 function toggleDistanceAway() {
     let distanceAwayfilter = document.querySelector("#distanceAwayfilter");
-    if (distanceAwayfilter.style.display === "inline-block") {
-        distanceAwayfilter.style.display = "none";
+    if (distanceAwayfilter.style.display === "none") {
+        distanceAwayfilter.style.display = "inline-block";
         distanceAwaybutton.style.background = "rgb(47, 47, 47)";
         distanceAwaybutton.style.color = "white";
     } else {
-        distanceAwayfilter.style.display = "inline-block";
+        distanceAwayfilter.style.display = "none";
         distanceAwaybutton.style.background = "white";
         distanceAwaybutton.style.color = "black";
     }
@@ -69,7 +69,7 @@ let state = {
     maximumDistanceAway: 5
 };
 
-fetch('./data/listingdata.json')
+fetch('aptData.json')
     .then((response) => { 
         return response.json();
     })
@@ -225,7 +225,7 @@ range1.addEventListener('input', setValue1);
 // maximum number of roomates slider
 let LinkToSlider2 = document.querySelector('#formControlRange2');
 LinkToSlider2.addEventListener('change', function() {
-    state.maximumRoomate = LinkToSlider2.value;
+    state.maximumDistanceAway = LinkToSlider2.value;
     renderCards();
 })
 
@@ -251,19 +251,20 @@ form.addEventListener('submit', handleForm);
 
 function handleForm(event) {
     event.preventDefault();
-    let listingName = document.querySelector('#listingName');
-    let location = document.querySelector('#location');
-    let duration = document.querySelector('#duration');
+    let placeName = document.querySelector('#placeName');
+    let area = document.querySelector('#area');
+    let leasingTerm = document.querySelector('#leasingTerm');
     let price = document.querySelector('#price');
-    let roommates = document.querySelector('#roommates');
+    let distanceAway = document.querySelector('#distanceAway');
     let features = document.querySelector('#features');
+    let description = document.querySelector('#description');
     let image = document.querySelector('#image');
 
-    addnewListing(listingName.value, location.value, duration.value, price.value, roommates.value, features.value, image);
+    addnewListing(placeName.value, area.value, leasingTerm.value, price.value, distanceAway.value, features.value, description.value, image);
 }
 
-function addnewListing(listingName, location, duration, price, roommates, features, image) {
-    state.addAListing.push({ "id": state.data.listings.length + 1, "listingName": listingName, "location": location, "duration": duration, "price": price, "roommates": roommates, "features": features, "image": image });
+function addnewListing(listingName, location, duration, price, roommates, features, description, image) {
+    state.addAListing.push({ "id": state.data.listings.length + 1, "placeName": placeName, "area": area, "leasingTerm": leasingTerm, "price": price, "distanceAway": distanceAway, "features": features, "description": description, "image": image });
     console.log(state.addAListing);
     renderCards();
     toggleForm();

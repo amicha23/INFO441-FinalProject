@@ -43,7 +43,8 @@
     </nav>
   </header>
 
-  <main class="container">
+  <!-- <main class="container"> -->
+  <main>
     <div class="title">
       <h1 class="description">Discover Your New Home</h1>
       <h2 class="description">Choose from over thousands of apartments, houses, condos and townhomes for rent near:</h2>
@@ -53,29 +54,29 @@
     <div class="filterby">
       <span>
         <button class="btn filter" id="pricefilterbtn">Price Limit</button> 
-        <form onSubmit="filterListings(event)">
+        <form id="pricefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
-            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="priceFilter">
+            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="formControlRange1">
           </div>
+        </form>
       
 
-          <button class="btn filter" id="roommatefilterbtn">Max number of Roommates</button>
+          <!-- <button class="btn filter" id="distanceAwayfilterbtn">Maximum Distance from Campus</button> -->
 
-        <button class="btn filter" id="distanceAwayfilterbtn">Max # Roommates</button>
+        <button class="btn filter" id="distanceAwayfilterbtn">Maximum Distance Away from Campus</button>
         <form id="distanceAwayfilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
             <input type="range" class="form-control-range" min="0" max="5" step="1" value="0" id="formControlRange2">
-
           </div>
-          <input type="submit" name="search" value="Search" />
+          <!-- <input type="submit" name="search" value="Search" /> -->
         </form>
+        </span> 
 
         <span class="right">
           <a class="btn btn-dark addListBtn" role="button">Add Listing</a>
         </span>
-      </span>
 
 
       <div class="formContainer">
@@ -101,8 +102,8 @@
           <label class="card-text" for="image">Upload image:</label>
           <input class="card-text" type="file" id="image" name="image" accept="image/*">
 
-          <label class="card-text" for="description">Description:</label>
-          <textarea class="card-text" name="description" id="description"></textarea> 
+          <!-- <label class="card-text" for="description">Description:</label>
+          <textarea class="card-text" name="description" id="description"></textarea>  -->
 
           <button id="submitListing" class="card-text submit" type="submit">Submit Listing</button>
 
@@ -141,8 +142,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
 
-  <script src="javascripts/viewlisting.js"></script>
-  <script src="javascripts/viewlisting.js"></script>
+  <script src="javascripts/Apartment.js"></script>
 </body>
 
 </html>

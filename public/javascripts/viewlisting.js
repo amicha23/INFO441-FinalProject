@@ -28,7 +28,7 @@ function myFunction1() {
 // Save an apartment for a user to saved field
 async function saveApt(apt){
     // load apt name into 'apt' parameter in html
-    //let apt = document.querySelector("h2.detail-titles").textContent;
+    // let apt = document.querySelector("h2.detail-titles").textContent;
     try{
         let response = await fetch(`/users/saveApt?apt=${apt}`,
             { method: "POST", body: JSON.stringify({apt: apt}), headers: {'Content-Type': 'application/json'}})
@@ -92,7 +92,8 @@ async function loadUser(){
     } catch(error) {
       console.log(error);
     }
-}
+  }
+
 
 async function saveUser() {
     // const urlParams = new URLSearchParams(window.location.search); //switch back later for sessions

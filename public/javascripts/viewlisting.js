@@ -10,7 +10,8 @@ async function init(){
 let hamburger = document.querySelector(".hamburger");
 hamburger && hamburger.addEventListener('click', myFunction1);
 
-function myFunction1() {
+// for the hamburger menu to toggle when clicked on
+function myFunctionham1() {
     let navMenu = document.querySelector(".nav-menu");
 
     if (hamburger.classList.contains("active")) {

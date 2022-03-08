@@ -1,482 +1,445 @@
 {
-    "listings": [{
-                "id": 1,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "july 2021 - july 2022",
-                "price": "1400",
-                "roommates": "1",
-                "features": "studio, open kitchen, rooftop.",
-                "image": "img/room5.jpg"
-            },
-            {
-                "id": 2,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1000",
-                "roommates": "2",
-                "features": "two bedrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 3,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "may 2021 - may 2022",
-                "price": "1100",
-                "roommates": "3",
-                "features": "two bathrooms, balony, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 4,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "june 2021 - june 2022",
-                "price": "1200",
-                "roommates": "2",
-                "features": "two bathrooms, washing machine, large kitchen, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 5,
-                "placeName": "Kennedy Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1400",
-                "roommates": "1",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 6,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1500",
-                "roommates": "0",
-                
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 7,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1600",
-                "roommates": "2",
-                
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 8,
-                "placeName": "Kennedy Apartments",
-                "area": "45th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1700",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 9,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1800",
-                "roommates": "2",
-                "features": "two bathrooms, washer, dryer, stairs.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 10,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1800",
-                "roommates": "2",
-                "features": "two bathrooms, washer, dryer, large kitchen, stairs.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 11,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "june 2021 - june 2022",
-                "price": "1500",
-                "roommates": "5",
-                "features": "three bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 12,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1200",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 13,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1000",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 14,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1700",
-                "roommates": "5",
-                "features": "three bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 15,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1300",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 16,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1400",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 17,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1050",
-                "roommates": "5",
-                "features": "four bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 18,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1150",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 19,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "june 2021 - june 2022",
-                "price": "1100",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 20,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1600",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 21,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1800",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 22,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1700",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 23,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1400",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 24,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1050",
-                "roommates": "5",
-                "features": "three bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 25,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1000",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 26,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1500",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 27,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1600",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 28,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1250",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 29,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1100",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 30,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "june 2021 - june 2022",
-                "price": "1150",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 31,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1200",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 32,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1700",
-                "roommates": "1",
-                "features": "studio, balony, large kitchen, stairs.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 33,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1800",
-                "roommates": "0",
-                "features": "one bedroom, large kitchen, stairs.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 34,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1300",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 35,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1100",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 36,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "june 2021 - june 2022",
-                "price": "1350",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 37,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1500",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 38,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1400",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 39,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1300",
-                "roommates": "2",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 40,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1200",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 41,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "july 2021 - july 2022",
-                "price": "1050",
-                "roommates": "4",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 42,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1200",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 43,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1600",
-                "roommates": "0",
-                "features": "studio, washer, dryer, stairs.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 44,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1200",
-                "roommates": "1",
-                "features": "studio, balony, stairs, rooftop.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 45,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "june 2021 - june 2022",
-                "price": "1150",
-                "roommates": "3",
-                "features": "two bathrooms, balony, large kitchen, stairs, rooftop.",
-                "image": "img/living-room.jpg"
-            },
-            {
-                "id": 46,
-                "placeName": "Savannah Apartments",
-                "area": "45th st",
-                "duration": "sept 2021 - sept 2022",
-                "price": "1500",
-                "roommates": "1",
-                "features": "one bedroom, large kitchen, stairs.",
-                "image": "img/kitchen.jpeg"
-            },
-            {
-                "id": 47,
-                "placeName": "the M Apartments",
-                "area": "4700 Brooklyn Ave",
-                "duration": "june 2021 - june 2022",
-                "price": "1400",
-                "roommates": "1",
-                "features": "studio, balony, rooftop.",
-                "image": "img/house1.jpg"
-            },
-            {
-                "id": 48,
-                "placeName": "Twelve at U District",
-                "area": "12th st",
-                "duration": "aug 2021 - aug 2022",
-                "price": "1000",
-                "roommates": "3",
-                "features": "two bathrooms, balony, stairs.",
-                "image": "img/living-room.jpg"
-            }
-        ]
+    "listings": [
+        {
+            "id": 1,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1400",
+            "distanceAway": "1",
+            "features": "studio, open kitchen, rooftop",
+            "image": "./img/newphoto.jpg",
+            "description": "Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+        },
+        {
+            "id": 2,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1000",
+            "distanceAway": "2",
+            "features": "private bedrooms, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 3,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "May 2021 - May 2022",
+            "price": "1100",
+            "distanceAway": "3",
+            "features": "private bathroom, balcony, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 4,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1200",
+            "distanceAway": "2",
+            "features": "private bathroom, in-unit laundry, large kitchen, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi there my name's Sahithi and I'm living in the M apartments, I live in a 3-bedroom. One of my roommates is looking to move out so my other roommate and I are helping her sublease her apartment. Message me on instagram @sahithi2400 if you're interested."
+        },
+        {
+            "id": 5,
+            "placeName": "Kennedy Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "500",
+            "distanceAway": "1",
+            "features": "1 bedroom, balcony, large kitchen",
+            "image": "img/house1.jpg",
+            "description":"Hi, I'm Jack. I'm leasing my unit in Kennedy Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
+        },
+        {
+            "id": 6,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1500",
+            "distanceAway": "0",
+            "features": "private bathroom, in-unit laundry, large kitchen",
+            "image": "img/living-room.jpg",
+            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 7,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "800",
+            "distanceAway": "2",
+            "features": "private bathroom, in-unit laundry, rooftop",
+            "image": "./img/newphoto.jpg",
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+        },
+        {
+            "id": 8,
+            "placeName": "Kennedy Apartments",
+            "area": "45th Street",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1700",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description": "Hi, I'm Jack. I'm leasing my unit in Kennedy Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
+        },
+        {
+            "id": 9,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "300",
+            "distanceAway": "2",
+            "features": "private bathroom, in-unit laundry, stairs",
+            "image": "img/house1.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            
+        },
+        {
+            "id": 10,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1800",
+            "distanceAway": "2",
+            "features": "private bathroom, in-unit laundry, large kitchen, stairs",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 11,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "500",
+            "distanceAway": "5",
+            "features": "balcony, large kitchen, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+        },
+        {
+            "id": 12,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1200",
+            "distanceAway": "3",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 13,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1000",
+            "distanceAway": "4",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 14,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "600",
+            "distanceAway": "5",
+            "features": "in-unit laundry, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 15,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1300",
+            "distanceAway": "4",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 16,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1400",
+            "distanceAway": "3",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 17,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1050",
+            "distanceAway": "5",
+            "features": "four bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 18,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1150",
+            "distanceAway": "4",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 19,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1100",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+        },
+        {
+            "id": 20,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1100",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 21,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1800",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "./img/newphoto.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 22,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1700",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 23,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1400",
+            "distanceAway": "3",
+            "features": "private bathroom, balcony, large kitchen, in-unit laundry",
+            "image": "img/living-room.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 24,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1050",
+            "distanceAway": "5",
+            "features": "balcony, large kitchen, stairs, rooftop",
+            "image": "./img/newphoto.jpg",
+            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 25,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1000",
+            "distanceAway": "4",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 26,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1500",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 27,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1600",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 28,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1250",
+            "distanceAway": "4",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 29,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1100",
+            "distanceAway": "3",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 30,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1150",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs",
+            "image": "./img/newphoto.jpg",
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+        },
+        {
+            "id": 31,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1200",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, in-unit laundry, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 32,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1700",
+            "distanceAway": "1",
+            "features": "studio, balcony, large kitchen, stairs",
+            "image": "img/living-room.jpg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 33,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1800",
+            "distanceAway": "0",
+            "features": "one bedroom, large kitchen, stairs",
+            "image": "img/living-room.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 34,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1300",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 35,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1100",
+            "distanceAway": "3",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 36,
+            "placeName": "the M Apartments",
+            "area": "4700 Brooklyn Ave",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "1350",
+            "distanceAway": "4",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/kitchen.jpeg",
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+        },
+        {
+            "id": 37,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "July 2021 - July 2022",
+            "price": "1500",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        },
+        {
+            "id": 38,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Sept 2021 - Sept 2022",
+            "price": "1400",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/house1.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 39,
+            "placeName": "Savannah Apartments",
+            "area": "45th Street",
+            "leasingTerm": "Aug 2021 - Aug 2022",
+            "price": "1300",
+            "distanceAway": "2",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "img/living-room.jpg",
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+        },
+        {
+            "id": 40,
+            "placeName": "Twelve at U District",
+            "area": "12th Street",
+            "leasingTerm": "June 2021 - June 2022",
+            "price": "700",
+            "distance": "3",
+            "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
+            "image": "./img/newphoto.jpg",
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+        }
+    ]
 }

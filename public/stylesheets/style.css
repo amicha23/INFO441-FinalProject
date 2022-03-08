@@ -281,8 +281,9 @@ img {
     margin-top: 3em;
   }
   .viewImg {
-    /* height: 50vh; */
-    max-width: 80%;
+    height: 60vh;
+    width: 55%;
+    /* max-width: 80%; */
   }
 }
 

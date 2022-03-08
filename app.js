@@ -62,11 +62,11 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.get('/signin',
-    msid.signIn({postLoginRedirect: '/'})
+msid.signIn({postLoginRedirect: '/landing.html'})
 )
 
 app.get('/signout',
-    msid.signOut({postLogoutRedirect: '/'})
+msid.signOut({postLogoutRedirect: '/landing.html'})
 )
 
 app.get('/error', (req, res) => res.status(500).send('Server Error'))

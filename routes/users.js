@@ -3,26 +3,38 @@ var router = express.Router();
 
 /* GET user info. */
 router.get('/', async function(req, res, next) {
+  console.log(req.session)
   // let session = req.session;
-  let testUsername = "test user";
-  try {
-    // let findUser = session.account.username;
-    let findUser = testUsername;
-    let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
-    let allapt = userInfo[0].saved;
-    let apt = await req.db.Apartment.find().where('placeName').in(allapt).exec();
-    let allPreviews = []; // hold all html pages
-    console.log(apt[0].placeName)
-    for (let i = 0; i < apt.length; i++ ) {
-      let htmlReturn = await getHtml(apt[i]); // return single html page
-      console.log(htmlReturn)
-      allPreviews.push(htmlReturn);
+  // let testUsername = "test user";
+  if (req.session.isAuthenticated) {
+    let testUsername = req.session.account.username;
+    console.log(testUsername);
+    try {
+      // let findUser = session.account.username;
+      let findUser = testUsername;
+      let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
+      let allapt = userInfo[0].saved;
+      let apt = await req.db.Apartment.find().where('placeName').in(allapt).exec();
+      console.log(apt.length)
+      if (apt.length === 0) {
+        res.json({"status": "no savings"});
+      } else {
+        let allPreviews = []; // hold all html pages
+        console.log(apt[0].placeName)
+        for (let i = 0; i < apt.length; i++ ) {
+          let htmlReturn = await getHtml(apt[i]); // return single html page
+          console.log(htmlReturn)
+          allPreviews.push(htmlReturn);
+        }
+        console.log(allPreviews)
+        // res.json(apt);
+        res.json(allPreviews);
+      }
+    } catch(error) {
+      res.json({"status": "error", "error": error})
     }
-    console.log(allPreviews)
-    // res.json(apt);
-    res.json(allPreviews);
-  } catch(error) {
-    res.json({"status": "error", "error": error})
+  } else {
+    res.json({"status": "error", "error": "not logged in"})
   }
 });
 
@@ -41,64 +53,6 @@ async function getHtml(apt) {
     }[tag]));
 
     let htmlReturn = ""
-    htmlReturn += '<div style="max-width: 300px; border: solid 1px; padding: 3px; text-align: center;">';
-    if ("placeName" in apt) {
-      htmlReturn += '<h1>'
-      htmlReturn += escapeHTML(apt["placeName"])
-      htmlReturn += "</h1>"
-    }
-    if ("area" in apt) {
-      htmlReturn += '<p> href="'
-      htmlReturn += escapeHTML(apt["area"])
-      htmlReturn += "</p>"
-    }
-
-    if ("size" in apt) {
-
-      htmlReturn += '<p>'
-      htmlReturn += apt["size"]
-      htmlReturn += "</p>"
-
-      // if (!("image" in apt)) {
-      //   htmlReturn += "</a>"
-      // }
-    }
-
-    if ("image" in apt) {
-      htmlReturn += '<img src="'
-      htmlReturn += escapeHTML(apt["image"])
-      htmlReturn += '" style="max-height: 200px; max-width: 270px;"></a>'
-    }
-
-    if ("leasingTerm" in apt) {
-      htmlReturn += '<p>'
-      htmlReturn += apt["leasingterm"]
-      htmlReturn += "</p>"
-    }
-    if ("price" in apt) {
-      htmlReturn += '<p>'
-      htmlReturn += apt["price"]
-      htmlReturn += "</p>"
-    }
-
-    if ("distanceAway" in apt) {
-      htmlReturn += '<p>'
-      htmlReturn += apt["distanceAway"]
-      htmlReturn += "</p>"
-    }
-
-    if ("description" in apt) {
-      htmlReturn += '<p>'
-      htmlReturn += escapeHTML(apt["description"])
-      htmlReturn += "</p>"
-    }
-
-    htmlReturn += "</div>";
-    // console.log(htmlReturn)
-
-    // BREAK
-
-
     htmlReturn = `<div>
                     <h2 id=${apt["placeName"]} class="detail-titles">${apt["placeName"]}</h2>
                     <flex class="center">
@@ -109,8 +63,8 @@ async function getHtml(apt) {
                 <div class="row">
                     <div class="card-row">
                         <div class="column mb-4">
-                            <p class="card-text">
-                              ${apt["description"]}
+                            <p class="card-text text-center">
+                              Description: ${apt["description"]}
                             </p>
                         </div>
 
@@ -118,11 +72,12 @@ async function getHtml(apt) {
                             <div class="card mb-4">
                                 <div class="description card-body">
                                     <div>
+                                        <p class="card-text">Area: ${apt["area"]}</p>
                                         <p class="card-text">Location: Savanna located on 45th</p>
-                                        <p class="card-text">Months available: June - August</p>
-                                        <p class="card-text">Number of roommates: 2</p>
-                                        <p class="card-text">Features: in-unit laundry, view, open deck</p>
-                                        <p class="card-text">Price: ${apt["price"]} per month</p>
+                                        <p class="card-text">Distance Away: ${apt["distanceAway"]} mi</p>
+                                        <p class="card-text">Leasing Term: ${apt["leasingterm"]} months</p>
+                                        <p class="card-text">Size: ${apt["size"]} SqFt</p>
+                                        <p class="card-text">Price: $${apt["price"]} per month</p>
                                         <a onclick="unsaveApt('${apt["placeName"]}')" id=${apt["placeName"]} class="saved btn btn-dark" href="#" role="button">
                                             <span class="saved-logo-view" aria-label="save listing button">&nbsp;</span>Remove Listing
                                         </a>
@@ -132,16 +87,6 @@ async function getHtml(apt) {
                         </div>
                     </div>
                 </div>`
-
-
-
-
-
-
-
-
-
-
     return htmlReturn;
   } catch(err) {
     return JSON.stringify(err);
@@ -151,8 +96,10 @@ async function getHtml(apt) {
 
 // Save User -> Create Account button?
 router.post('/', async function(req, res, next) {
-  let testUsername = "another user";
-  // let session = req.session;
+  // let testUsername = "another user";
+  // let testUsername = req.body.username;
+  let testUsername = req.body.username;
+  console.log(testUsername)
   try {
     let checkUser = await req.db.User.find().where('username').in(testUsername).exec(); //change later
     if (checkUser.length > 0) {
@@ -175,10 +122,12 @@ router.post('/', async function(req, res, next) {
 
 // Add apt to saved -> Add save button
 router.post('/saveApt', async function(req, res, next) {
-  let testUsername = "test user";
+  // let testUsername = "test user";
   // let session = req.session;
-  // if (session.isAuthenticated) {
-    console.log("test")
+  if (req.session.isAuthenticated) {
+    console.log("why")
+    let testUsername = req.session.account.username;
+    console.log("here username:", testUsername)
     try {
       let newSave = req.query.apt; // or req.body.apt;
       // let findUser = session.account.username;
@@ -197,16 +146,17 @@ router.post('/saveApt', async function(req, res, next) {
     } catch(error) {
       res.json({"status": "error", "error": error})
     }
-  // } else {
-  //   res.json({"status": "error", "error": "not logged in"})
-  // }
+  } else {
+    res.json({"status": "error", "error": "not logged in"})
+  }
 })
 
 // Remove saved apt
 router.post('/unsaveApt', async function(req, res, next) {
   // let session = req.session;
-  // if (session.isAuthenticated) {
-    let testUsername = "test user";
+  if (req.session.isAuthenticated) {
+    // let testUsername = "test user";
+    let testUsername = req.session.account.username;
     try {
       let findApt = req.query.apt; // or body param
       // let findUser = session.account.username;
@@ -223,9 +173,29 @@ router.post('/unsaveApt', async function(req, res, next) {
     } catch (error) {
       res.json({"status": "error", "error": error})
     }
-  // } else {
-  //   res.json({"status": "error", "error": "not logged in"})
-  // }
+  } else {
+    res.json({"status": "error", "error": "not logged in"})
+  }
+})
+
+
+
+// GET login information
+router.get('/getIdentity', async function(req, res, next) {
+  let session = req.session;
+  if (session.isAuthenticated) {
+    let loginInfo = {
+      status: "loggedin",
+      userInfo: {
+         "name": session.account.name,
+         "username": session.account.username
+        }
+    }
+    console.log(loginInfo);
+    res.json(loginInfo);
+  } else {
+    res.json({"status": "loggedout" })
+  }
 })
 
 export default router;

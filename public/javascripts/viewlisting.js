@@ -1,9 +1,14 @@
 'use strict'
 
+//import { response } from "express";
+
 async function init(){
-    console.log("loaded")
-    loadUser()
+    console.log("loaded");
+    loadUser();
 }
+
+let listingsHTML = document.getElementById('feed');
+const list = document.createDocumentFragment();
 
 let hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener('click', myFunction1);
@@ -20,10 +25,10 @@ function myFunction1() {
     }
 }
 
-// Save an apartment for a user
-async function saveApt(){
+// Save an apartment for a user to saved field
+async function saveApt(apt){
     // load apt name into 'apt' parameter in html
-    let apt = document.querySelector("h2.detail-titles").textContent;
+    //let apt = document.querySelector("h2.detail-titles").textContent;
     try{
         let response = await fetch(`/users/saveApt?apt=${apt}`,
             { method: "POST", body: JSON.stringify({apt: apt}), headers: {'Content-Type': 'application/json'}})
@@ -38,9 +43,9 @@ async function saveApt(){
     }catch(error){
         console.log("error:" + error);
     }
-  }
-
-// Remove an apartment for a user
+  
+}
+// Remove an apartment from saved field for a user
 async function unsaveApt(apt){
     // load apt name into 'apt' parameter in html
     // console.log(this.id);
@@ -63,7 +68,7 @@ async function unsaveApt(apt){
     }
   }
 
-
+// Load all posts in the user saved field
 async function loadUser(){
     // const urlParams = new URLSearchParams(window.location.search); // change back later
     // const username = urlParams.get('user');
@@ -73,12 +78,67 @@ async function loadUser(){
         let response = await fetch(`/users?username=${username}`);
         let responseJSON = await response.json();
         let newHTML = responseJSON;
-        // console.log(newHTML[0])
+        // console.log(newHTML)
         // load newHTML
         // document.getElementById("user_info_div").innerHTML = newHTML;
-        document.getElementById("user_info_div").innerHTML = newHTML;
+        if (newHTML.status === "no savings") {
+            document.getElementById("user_info_div").innerHTML = '';
+        } else if (newHTML.status === "error") {
+            document.getElementById("user_info_div").innerHTML = 'Error Loading Posts';
+        } else {
+            document.getElementById("user_info_div").innerHTML = newHTML;
+        }   
         // document.getElementById("main").innerHTML = newHTML;
     } catch(error) {
       console.log(error);
     }
+}
+
+async function saveUser() {
+    // const urlParams = new URLSearchParams(window.location.search); //switch back later for sessions
+    // const username = urlParams.get('user');
+    let username = "test another user"
+    try {
+        let response = await fetch(`/users`, {
+            method: "POST",
+            body: JSON.stringify({username: username}),
+            headers: {'Content-Type': 'application/json'}
+        })
+        let responseJSON = await response.json();
+        if (responseJSON.status == "error"){
+            console.log("error:" + responseJSON.error);
+        }
+        return responseJSON;
+    } catch(error){
+        console.log("error:" + error);
+    }
   }
+
+  //fetching api for apartment POST 
+const fetchListings = (distanceAway = 10, minPrice = 0, maxPrice = 100000, minSize = 0, maxSize = 100000) => {
+    let outerDiv = document.createElement('div')
+   
+       fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`).then((response) => {
+            return response.json();
+        }).then((res) => {
+            console.log('Res is: ', res.data)
+            let listings = res.data;
+            listings.map((item) => {
+                let wrapper = document.createElement('div');
+                let listingName = document.createElement('h1');
+                let area = document.createElement('p')
+
+                listingName.innerHTML = `${item.placeName}`;
+                area.innerHTML = `${item.area}`;
+
+                wrapper.appendChild(listingName)
+                wrapper.appendChild(area)
+
+                outerDiv.appendChild(wrapper)
+            })
+        }).catch((err) => console.log('Something went wrong: ',err))
+        
+   listingsHTML.appendChild(outerDiv)
+}
+
+fetchListings();

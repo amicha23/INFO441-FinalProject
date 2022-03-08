@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="utf-8">
   <meta name="Author" content="Yashasvi Joginapally, Fanny Mai, Andrew Michaels, Alex Taylor">
   <meta name="Description" content="View apartment listings that are available near UW Campus">
   <title>Student Apartments</title>
@@ -8,18 +10,21 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="javascripts/viewlisting.js"></script>
   <script src="javascripts/identity.js"></script>
+  <script src="javascripts/Apartment.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Encode+Sans:900" rel="stylesheet">
-  <link href="https://cdnjs.cloudfare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Encode+Sans:900">
+  <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-e)JMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Q10h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    integrity="sha384-e)JMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Q10h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body onload="loadListings()">
   <header class="header">
     <nav class="navbar">
-      <a href="index.html" class="nav-logo"><span class="logo-img" aria-hidden="true">&nbsp;</span>Student Apartments</a>
+      <a href="index.html" class="nav-logo"><span class="logo-img" aria-hidden="true">&nbsp;</span>Student
+        Subleasing.</a>
       <button class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -27,13 +32,13 @@
       </button>
       <ul class="nav-menu" id="nav-menu2">
         <li class="nav-item">
-          <a id="listings" href="viewlistings.html" class="nav-link">Saved Listings</a>
+          <a href="#" class="nav-link">Saved Listings</a>
         </li>
         <li class="nav-item">
           <a href="landing.html" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#" class="nav-link">All Listings</a>
         </li>
       </ul>
     </nav>
@@ -48,51 +53,60 @@
 
     <div class="filterby">
       <span>
+
         <button class="btn filter" id="pricefilterbtn">Price Limit</button>
         <form id="pricefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
-            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="formControlRange1">
+            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900"
+              id="formControlRange1">
+
           </div>
         </form>
 
-        <button class="btn filter" id="roommatefilterbtn">Max number of Roommates</button>
-        <form id="roommatefilter">
+        <button class="btn filter" id="distanceAwayfilterbtn">Max # Roommates</button>
+        <form id="distanceAwayfilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
             <input type="range" class="form-control-range" min="0" max="5" step="1" value="0" id="formControlRange2">
+
           </div>
         </form>
 
         <span class="right">
-          <a onclick="saveApt('LiveNLove')" class="btn btn-dark addListBtn" role="button">Add Listing</a> <!--delete later-->
+          <a class="btn btn-dark addListBtn" role="button">Add Listing</a>
         </span>
       </span>
 
+
       <div class="formContainer">
-        <form id="addListing" role="form" method="get">
-          <label class="card-text" for="listingName">Name of Listing:</label>
-          <input class="formStyle card-text" type="text" name="listingName" id="listingName" required><br/>
+        <form id="addListing" role="form" method="GET">
+          <label class="card-text" for="placeName">Name of Listing:</label>
+          <input class="formStyle card-text" type="text" name="placeName" id="placeName" required><br />
 
-          <label class="card-text" for="location">Location:</label>
-          <input class="formStyle card-text" type="text" name="location" id="location" required><br/>
+          <label class="card-text" for="area">Area:</label>
+          <input class="formStyle card-text" type="text" name="area" id="area" required><br />
 
-          <label class="card-text" for="duration">Months available:</label>
-          <input class="formStyle card-text" type="text" name="duration" id="duration" required><br/>
+          <label class="card-text" for="leasingTerm">Leasing Term (Months Available):</label>
+          <input class="formStyle card-text" type="text" name="leasingTerm" id="leasingTerm" required><br />
 
-          <label class="card-text" for="price">Rent(per month): $</label>
-          <input class="formStyle card-text" type="number" name="price" id="price" required><br/>
+          <label class="card-text" for="price">Price (per month): $</label>
+          <input class="formStyle card-text" type="number" name="price" id="price" required><br />
 
-          <label class="card-text" for="roommates">Number of Roommates:/label>
-          <input class="formStyle card-text" type="number" name="roommates" id="roommates" required><br/>
+          <label class="card-text" for="distanceAway">Distance Away from Campus:</label>
+          <input class="formStyle card-text" type="number" name="distanceAway" id="distanceAway" required><br />
 
           <label class="card-text" for="features">Features:</label>
-          <textarea class="card-text" name="features" id="features" cols="40" rows="5"></textarea><br/>
+          <textarea class="card-text" name="features" id="features" cols="40" rows="5"></textarea><br />
 
           <label class="card-text" for="image">Upload image:</label>
-          <input class="card-text" type="file" name="image" id="image" accept="image/*">
+          <input class="card-text" type="file" id="image" name="image" accept="image/*">
+
+          <label class="card-text" for="description">Description:</label>
+          <textarea class="card-text" name="description" id="description"></textarea> 
 
           <button id="submitListing" class="card-text submit" type="submit">Submit Listing</button>
+
         </form>
       </div>
 
@@ -117,11 +131,18 @@
   <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
 
   <!-- Imports - Bootstrap JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
 
+  <script src="javascripts/viewlisting.js"></script>
   <script src="javascripts/viewlisting.js"></script>
 </body>
 

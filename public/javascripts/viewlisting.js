@@ -11,9 +11,10 @@ let listingsHTML = document.getElementById('feed');
 const list = document.createDocumentFragment();
 
 let hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener('click', myFunction1);
+hamburger.addEventListener('click', myFunctionham1);
 
-function myFunction1() {
+// for the hamburger menu to toggle when clicked on
+function myFunctionham1() {
     let navMenu = document.querySelector(".nav-menu");
 
     if (hamburger.classList.contains("active")) {

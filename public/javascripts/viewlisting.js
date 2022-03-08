@@ -3,15 +3,12 @@
 //import { response } from "express";
 
 async function init(){
-    console.log("loaded");
+    console.log("loaded")
     loadUser();
 }
 
-let listingsHTML = document.getElementById('feed');
-const list = document.createDocumentFragment();
-
 let hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener('click', myFunction1);
+hamburger && hamburger.addEventListener('click', myFunction1);
 
 function myFunction1() {
     let navMenu = document.querySelector(".nav-menu");
@@ -114,32 +111,43 @@ async function saveUser() {
         console.log("error:" + error);
     }
   }
+let listingsHTML = document.getElementById('feed');
 
   //fetching api for apartment POST 
 const fetchListings = (distanceAway = 10, minPrice = 0, maxPrice = 100000, minSize = 0, maxSize = 100000) => {
-    let outerDiv = document.createElement('div')
+    let listingsHTML = document.getElementById('feed');
+
+    let outerDiv = document.createElement('div');
    
-       fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`).then((response) => {
-            return response.json();
-        }).then((res) => {
-            console.log('Res is: ', res.data)
-            let listings = res.data;
-            listings.map((item) => {
-                let wrapper = document.createElement('div');
-                let listingName = document.createElement('h1');
-                let area = document.createElement('p')
+    fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`).then((response) => {
+        return response.json();
+    }).then((res) => {
+        console.log('Res is: ', res.data)
+        let listings = res.data;
+        listings.map((item) => {
+            let wrapper = document.createElement('div');
+            let listingName = document.createElement('h1');
+            let area = document.createElement('p')
 
-                listingName.innerHTML = `${item.placeName}`;
-                area.innerHTML = `${item.area}`;
+            listingName.innerHTML = `${item.placeName}`;
+            area.innerHTML = `${item.area}`;
 
-                wrapper.appendChild(listingName)
-                wrapper.appendChild(area)
+            wrapper.appendChild(listingName)
+            wrapper.appendChild(area)
 
-                outerDiv.appendChild(wrapper)
-            })
-        }).catch((err) => console.log('Something went wrong: ',err))
+            outerDiv.appendChild(wrapper)
+        })
+    }).catch((err) => console.log('Something went wrong: ',err))
         
-   listingsHTML.appendChild(outerDiv)
+   listingsHTML && listingsHTML.appendChild(outerDiv)
 }
 
 fetchListings();
+
+
+const filterListings = (event) => {
+    event.preventDefault();
+    const priceFilter = document.getElementById('priceFilter').value;
+
+    console.log('PriceFilter is: ', priceFilter)
+}

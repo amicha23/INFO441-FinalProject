@@ -6,7 +6,6 @@
   <title>Student Apartments</title>
   <!-- css links -->
   <link rel="stylesheet" href="stylesheets/style.css">
-  <script src="javascripts/viewlisting.js"></script>
   <script src="javascripts/identity.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans:900" rel="stylesheet">
@@ -48,20 +47,21 @@
 
     <div class="filterby">
       <span>
-        <button class="btn filter" id="pricefilterbtn">Price Limit</button>
-        <form id="pricefilter">
+        <button class="btn filter" id="pricefilterbtn">Price Limit</button> 
+        <form onSubmit="filterListings(event)">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
-            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="formControlRange1">
+            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="priceFilter">
           </div>
-        </form>
+      
 
-        <button class="btn filter" id="roommatefilterbtn">Max number of Roommates</button>
-        <form id="roommatefilter">
+          <button class="btn filter" id="roommatefilterbtn">Max number of Roommates</button>
+
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
             <input type="range" class="form-control-range" min="0" max="5" step="1" value="0" id="formControlRange2">
           </div>
+          <input type="submit" name="search" value="Search" />
         </form>
 
         <span class="right">

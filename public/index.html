@@ -6,6 +6,8 @@
   <title>Student Apartments</title>
   <!-- css links -->
   <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="javascripts/viewlisting.js"></script>
+  <script src="javascripts/identity.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans:900" rel="stylesheet">
   <link href="https://cdnjs.cloudfare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
@@ -14,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body>
+<body onload="loadListings()">
   <header class="header">
     <nav class="navbar">
       <a href="index.html" class="nav-logo"><span class="logo-img" aria-hidden="true">&nbsp;</span>Student Apartments</a>
@@ -25,7 +27,7 @@
       </button>
       <ul class="nav-menu" id="nav-menu2">
         <li class="nav-item">
-          <a href="viewlistings.html" class="nav-link">Saved Listings</a>
+          <a id="listings" href="viewlistings.html" class="nav-link">Saved Listings</a>
         </li>
         <li class="nav-item">
           <a href="landing.html" class="nav-link">About</a>
@@ -63,7 +65,7 @@
         </form>
 
         <span class="right">
-          <a class="btn btn-dark addListBtn" role="button">Add Listing</a>
+          <a onclick="saveApt('LiveNLove')" class="btn btn-dark addListBtn" role="button">Add Listing</a> <!--delete later-->
         </span>
       </span>
 

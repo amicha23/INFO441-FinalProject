@@ -1,7 +1,7 @@
 {
     "listings": [
         {
-            "id": 1,
+            "size": 500,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "July 2021 - July 2022",
@@ -12,7 +12,7 @@
             "description": "Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
-            "id": 2,
+            "size": 1800,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -23,7 +23,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 3,
+            "size": 340,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "May 2021 - May 2022",
@@ -34,7 +34,7 @@
             "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 4,
+            "size": 450,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "June 2021 - June 2022",
@@ -45,7 +45,7 @@
             "description":"Hi there my name's Sahithi and I'm living in the M apartments, I live in a 3-bedroom. One of my roommates is looking to move out so my other roommate and I are helping her sublease her apartment. Message me on instagram @sahithi2400 if you're interested."
         },
         {
-            "id": 5,
+            "size": 600,
             "placeName": "Kennedy Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -56,7 +56,7 @@
             "description":"Hi, I'm Jack. I'm leasing my unit in Kennedy Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
         },
         {
-            "id": 6,
+            "size": 660,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "June 2021 - June 2022",
@@ -67,7 +67,7 @@
             "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 7,
+            "size": 750,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -78,7 +78,7 @@
             "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
-            "id": 8,
+            "size": 850,
             "placeName": "Kennedy Apartments",
             "area": "45th Street",
             "leasingTerm": "June 2021 - June 2022",
@@ -89,7 +89,7 @@
             "description": "Hi, I'm Jack. I'm leasing my unit in Kennedy Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
         },
         {
-            "id": 9,
+            "size": 900,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -101,7 +101,7 @@
             
         },
         {
-            "id": 10,
+            "size": 1050,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -112,7 +112,7 @@
             "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 11,
+            "size": 1150,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "June 2021 - June 2022",
@@ -123,7 +123,7 @@
             "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
-            "id": 12,
+            "size": 1250,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -134,7 +134,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 13,
+            "size": 340,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -145,7 +145,7 @@
             "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 14,
+            "size": 1400,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -156,7 +156,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 15,
+            "size": 1500,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "June 2021 - June 2022",
@@ -167,7 +167,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 16,
+            "size": 1650,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -178,7 +178,7 @@
             "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 17,
+            "size": 350,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -189,7 +189,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 18,
+            "size": 580,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -200,7 +200,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 19,
+            "size": 490,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "June 2021 - June 2022",
@@ -211,7 +211,7 @@
             "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
-            "id": 20,
+            "size": 250,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -222,7 +222,7 @@
             "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 21,
+            "size": 210,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -233,7 +233,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 22,
+            "size": 220,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -244,7 +244,7 @@
             "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 23,
+            "size": 523,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -255,7 +255,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 24,
+            "size": 424,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -266,7 +266,7 @@
             "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 25,
+            "size": 425,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "June 2021 - June 2022",
@@ -277,7 +277,7 @@
             "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 26,
+            "size": 650,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -288,7 +288,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 27,
+            "size": 280,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -299,7 +299,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 28,
+            "size": 480,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -310,7 +310,7 @@
             "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 29,
+            "size": 330,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -321,7 +321,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 30,
+            "size": 430,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "June 2021 - June 2022",
@@ -332,7 +332,7 @@
             "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
-            "id": 31,
+            "size": 530,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -343,7 +343,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 32,
+            "size": 430,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -354,7 +354,7 @@
             "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 33,
+            "size": 530,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -365,7 +365,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 34,
+            "size": 530,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -376,7 +376,7 @@
             "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 35,
+            "size": 650,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -387,7 +387,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 36,
+            "size": 630,
             "placeName": "the M Apartments",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "June 2021 - June 2022",
@@ -398,7 +398,7 @@
             "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
-            "id": 37,
+            "size": 630,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "July 2021 - July 2022",
@@ -409,7 +409,7 @@
             "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
-            "id": 38,
+            "size": 530,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Sept 2021 - Sept 2022",
@@ -420,7 +420,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 39,
+            "size": 630,
             "placeName": "Savannah Apartments",
             "area": "45th Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
@@ -431,7 +431,7 @@
             "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
-            "id": 40,
+            "size": 540,
             "placeName": "Twelve at U District",
             "area": "12th Street",
             "leasingTerm": "June 2021 - June 2022",

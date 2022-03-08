@@ -37,10 +37,10 @@ addListBtn.addEventListener('click', toggleForm);
 
 function toggleForm() {
     let formContainer = document.querySelector(".formContainer");
-    if (formContainer.style.display === "block") {
-        formContainer.style.display = "none";
-    } else {
+    if (formContainer.style.display === "none") {
         formContainer.style.display = "block";
+    } else {
+        formContainer.style.display = "none";
     }
 }
 
@@ -69,7 +69,7 @@ let state = {
     maximumDistanceAway: 5
 };
 
-fetch('aptData.json')
+fetch('/Users/yashasvij/Desktop/Winter \'22 Courses/INFO 441/INFO441-FinalProject/aptData.json') 
     .then((response) => { 
         return response.json();
     })
@@ -184,11 +184,12 @@ function renderCards() {
         const searchString = e.target.value.toLowerCase();
         linkToRow.innerHTML = "";
         state.data.listings.forEach(function(listing) {
-            if (listing.listingName.toLowerCase().includes(searchString) ||
-                listing.location.toLowerCase().includes(searchString) ||
-                listing.duration.toLowerCase().includes(searchString) ||
+            if (listing.placeName.toLowerCase().includes(searchString) ||
+                listing.area.toLowerCase().includes(searchString) ||
+                listing.leasingTerm.toLowerCase().includes(searchString) ||
                 listing.price.toLowerCase().includes(searchString) ||
-                listing.roommates.toLowerCase().includes(searchString) ||
+                listing.distanceAway.toLowerCase().includes(searchString) ||
+                listing.description.toLowerCase().includes(searchString) ||
                 listing.features.toLowerCase().includes(searchString)) {
                 linkToRow.appendChild(createCard(listing));
             }
@@ -196,6 +197,7 @@ function renderCards() {
     });
 
     state.addAListing.forEach(function(listing) {
+        console.log(listing);
         linkToRow.appendChild(createCard(listing));
     });
 }
@@ -222,7 +224,7 @@ const
 document.addEventListener("DOMContentLoaded", setValue1);
 range1.addEventListener('input', setValue1);
 
-// maximum number of roomates slider
+// maximum distance away slider
 let LinkToSlider2 = document.querySelector('#formControlRange2');
 LinkToSlider2.addEventListener('change', function() {
     state.maximumDistanceAway = LinkToSlider2.value;

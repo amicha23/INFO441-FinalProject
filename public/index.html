@@ -9,7 +9,7 @@
   <!-- css links -->
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="javascripts/identity.js"></script>
-  <script src="javascripts/Apartment.js"></script>
+  <script src="javascripts/viewlisting.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Encode+Sans:900">
   <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css">
@@ -57,7 +57,7 @@
         <form id="pricefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
-            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="formControlRange1">
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="1800" step="125" value="10000" id="formControlRange1">
           </div>
         </form>
 
@@ -68,9 +68,19 @@
         <form id="distanceAwayfilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
-            <input type="range" class="form-control-range" min="0" max="5" step="1" value="0" id="formControlRange2">
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10" step="1" value="0" id="formControlRange2">
           </div>
           <!-- <input type="submit" name="search" value="Search" /> -->
+        </form>
+        </span>
+
+        <button class="btn filter" id="sizefilterbtn">Range of size</button>
+        <form id="sizefilter">
+          <div class="range-wrap">
+            <div class="range-value" id="rangeV3"></div>
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="5000" step="100" value="0" id="formControlRange3">
+          </div>
+          <input type="submit" name="search" value="Search" />
         </form>
         </span>
 

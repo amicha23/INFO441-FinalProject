@@ -66,7 +66,7 @@ let state = {
     data: {},
     addAListing: [],
     maximumPrice: 1800,
-    maximumDistanceAway: 5
+    maximumDistanceAway: 10
 };
 
 fetch('/Users/yashasvij/Desktop/Winter \'22 Courses/INFO 441/INFO441-FinalProject/aptData.json') 
@@ -257,16 +257,17 @@ function handleForm(event) {
     let area = document.querySelector('#area');
     let leasingTerm = document.querySelector('#leasingTerm');
     let price = document.querySelector('#price');
+    let size = document.querySelector('#size');
     let distanceAway = document.querySelector('#distanceAway');
     let features = document.querySelector('#features');
     let description = document.querySelector('#description');
     let image = document.querySelector('#image');
 
-    addnewListing(placeName.value, area.value, leasingTerm.value, price.value, distanceAway.value, features.value, description.value, image);
+    addnewListing(placeName.value, area.value, leasingTerm.value, price.value, size.value, distanceAway.value, features.value, description.value, image);
 }
 
 function addnewListing(listingName, location, duration, price, roommates, features, description, image) {
-    state.addAListing.push({ "id": state.data.listings.length + 1, "placeName": placeName, "area": area, "leasingTerm": leasingTerm, "price": price, "distanceAway": distanceAway, "features": features, "description": description, "image": image });
+    state.addAListing.push({ "id": state.data.listings.length + 1, "placeName": placeName, "area": area, "leasingTerm": leasingTerm, "price": price, "size": size, "distanceAway": distanceAway, "features": features, "description": description, "image": image });
     console.log(state.addAListing);
     renderCards();
     toggleForm();

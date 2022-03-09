@@ -114,6 +114,19 @@ async function saveUser() {
   }
 let listingsHTML = document.getElementById('feed');
 
+
+
+const reLoadListings =  () => {
+    let minPrice = document.getElementById("formControlRange1").min
+    let maxPrice = document.getElementById("formControlRange1").max
+    let minSize = document.getElementById("formControlRange3").min
+    let maxSize = document.getElementById("formControlRange3").max
+    let distanceAway = document.getElementById("formControlRange2")
+    //TODO get distance and size
+
+    fetchListings(distanceAway, minPrice, maxPrice, minSize, maxSize);
+
+}
   //fetching api for apartment POST 
 const fetchListings = (distanceAway = 10, minPrice = 0, maxPrice = 100000, minSize = 0, maxSize = 100000) => {
     let listingsHTML = document.getElementById('feed');
@@ -149,6 +162,11 @@ fetchListings();
 const filterListings = (event) => {
     event.preventDefault();
     const priceFilter = document.getElementById('priceFilter').value;
+    const distanceAwayfilter = document.getElementById('distanceAwayfilter').value;
+    const sizefilter = document.getElementById('sizefilter').value;
 
     console.log('PriceFilter is: ', priceFilter)
+    console.log('DistanceAwayfilter is: ', distanceAwayfilter)
+    console.log('Sizefilter is: ', sizefilter)
+
 }

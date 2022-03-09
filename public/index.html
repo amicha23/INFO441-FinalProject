@@ -9,6 +9,7 @@
   <!-- css links -->
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="javascripts/identity.js"></script>
+  <script src="javascripts/Profile.js"></script>
   <script src="javascripts/Apartment.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Encode+Sans:900">
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body onload="loadListings()">
+<body onload="loadListings()"> <!-- Hides "saved listings" button if not logged in -->
   <header class="header">
     <nav class="navbar">
       <a href="index.html" class="nav-logo"><span class="logo-img" aria-hidden="true">&nbsp;</span>Student
@@ -31,7 +32,7 @@
       </button>
       <ul class="nav-menu" id="nav-menu2">
         <li class="nav-item">
-          <a id="listings" href="viewlistings.html" class="nav-link">Saved Listings</a>
+          <a id="listings" href="savedlistings.html" class="nav-link">Saved Listings</a>
         </li>
         <li class="nav-item">
           <a href="landing.html" class="nav-link">About</a>
@@ -75,7 +76,7 @@
         </span>
 
         <span class="right">
-          <a class="btn btn-dark addListBtn" role="button">Add Listing</a>
+          <a onclick="saveApt('LiveNLove')" class="btn btn-dark addListBtn" role="button">Add Listing</a> <!-- Hard coded right now, change when all listings finished -->
         </span>
 
 

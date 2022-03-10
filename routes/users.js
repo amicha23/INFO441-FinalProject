@@ -10,7 +10,6 @@ router.get('/', async function(req, res, next) {
     let testUsername = req.session.account.username;
     console.log(testUsername);
     try {
-      // let findUser = session.account.username;
       let findUser = testUsername;
       let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
       let allapt = userInfo[0].saved;
@@ -41,17 +40,6 @@ router.get('/', async function(req, res, next) {
 // Get html for a url.
 async function getHtml(apt) {
   try {
-    // Encode and decode HTML entities
-    // https://stackoverflow.com/questions/40263803/native-javascript-or-es6-way-to-encode-and-decode-html-entities
-    const escapeHTML = str => str.replace(/[&<>'"]/g,
-      tag => ({
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      "'": '&#39;',
-      '"': '&quot;'
-    }[tag]));
-
     let htmlReturn = ""
     htmlReturn = `<div>
                     <h2 id=${apt["placeName"]} class="detail-titles">${apt["placeName"]}</h2>
@@ -94,7 +82,7 @@ async function getHtml(apt) {
 }
 
 
-// Save User -> Create Account button?
+// Save User through login
 router.post('/', async function(req, res, next) {
   // let testUsername = "another user";
   // let testUsername = req.body.username;
@@ -120,7 +108,7 @@ router.post('/', async function(req, res, next) {
   }
 });
 
-// Add apt to saved -> Add save button
+// Add apt to saved listings
 router.post('/saveApt', async function(req, res, next) {
   // let testUsername = "test user";
   // let session = req.session;
@@ -129,11 +117,9 @@ router.post('/saveApt', async function(req, res, next) {
     console.log("here username:", testUsername)
     try {
       let newSave = req.query.apt; // or req.body.apt;
-      // let findUser = session.account.username;
       let findUser = testUsername;
       let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
       console.log(userInfo);
-      // let allapt = userInfo[0].saved;
       // load post from the database
 
       if (!userInfo[0].saved.includes(newSave)) {
@@ -150,15 +136,13 @@ router.post('/saveApt', async function(req, res, next) {
   }
 })
 
-// Remove saved apt
+// Remove saved apt from saved listings
 router.post('/unsaveApt', async function(req, res, next) {
-  // let session = req.session;
   if (req.session.isAuthenticated) {
     // let testUsername = "test user";
     let testUsername = req.session.account.username;
     try {
       let findApt = req.query.apt; // or body param
-      // let findUser = session.account.username;
       let findUser = testUsername;
       let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
         if (userInfo[0].saved.includes(findApt)) {

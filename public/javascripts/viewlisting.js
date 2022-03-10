@@ -66,7 +66,7 @@ async function fetchListings() {
             listingName.innerHTML = `${item.placeName}`;
             area.innerHTML = `${item.area}`;
 
-            addAptBtn.innerHTML= `<a onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
+            addAptBtn.innerHTML= `<a id='${item.placeName}-addbtn' onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
             wrapper.appendChild(listingName)
             wrapper.appendChild(area)
             wrapper.appendChild(addAptBtn)

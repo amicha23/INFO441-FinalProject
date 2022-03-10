@@ -11,8 +11,8 @@ const isEmptyObject = (object) => {
 // create a new post
 router.post('/api/post', async function(req, res) {
   try {
-   const {placeName, area, size, distanceAway, price, description, leasingterm} = req.body;
-    const newPost = new req.db.Apartment({ placeName, area, size, distanceAway, price, description, leasingterm});
+   const {placeName, area, size, distanceAway, price, description, leasingterm, roommates, features, image} = req.body;
+    const newPost = new req.db.Apartment({ placeName, area, size, distanceAway, price, description, leasingterm, roommates, features, image });
     await newPost.save();
     if(newPost) {
     return res.json({

@@ -125,7 +125,6 @@ router.post('/saveApt', async function(req, res, next) {
   // let testUsername = "test user";
   // let session = req.session;
   if (req.session.isAuthenticated) {
-    console.log("why")
     let testUsername = req.session.account.username;
     console.log("here username:", testUsername)
     try {

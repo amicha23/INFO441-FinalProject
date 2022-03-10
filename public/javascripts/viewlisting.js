@@ -1,22 +1,22 @@
-// 'use strict'
+'use strict'
 
-// //import { response } from "express";
+//import { response } from "express";
 
-// let hamburger = document.querySelector(".hamburger");
-// hamburger.addEventListener('click', myFunctionham1);
+let hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener('click', myFunctionham1);
 
-// // for the hamburger menu to toggle when clicked on
-// function myFunctionham1() {
-//     let navMenu = document.querySelector(".nav-menu");
+// for the hamburger menu to toggle when clicked on
+function myFunctionham1() {
+    let navMenu = document.querySelector(".nav-menu");
 
-//     if (hamburger.classList.contains("active")) {
-//         hamburger.classList.remove("active");
-//         navMenu.classList.remove("active");
-//     } else {
-//         hamburger.classList.toggle("active");
-//         navMenu.classList.toggle("active");
-//     }
-// }
+    if (hamburger.classList.contains("active")) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    } else {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+}
 
 let listingsHTML = document.getElementById('feed');
 

@@ -69,7 +69,7 @@ let state = {
     maximumDistanceAway: 5
 };
 
-fetch('/Users/yashasvij/Desktop/Winter \'22 Courses/INFO 441/INFO441-FinalProject/aptData.json') 
+fetch('./aptData.json') 
     .then((response) => { 
         return response.json();
     })

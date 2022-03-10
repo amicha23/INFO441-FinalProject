@@ -66,12 +66,14 @@ function reLoadListings() {
             let wrapper = document.createElement('div');
             let listingName = document.createElement('h1');
             let area = document.createElement('p')
-
+            let addAptBtn = document.createElement('span');
             listingName.innerHTML = `${item.placeName}`;
             area.innerHTML = `${item.area}`;
 
+            addAptBtn.innerHTML= `<a onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
             wrapper.appendChild(listingName)
             wrapper.appendChild(area)
+            wrapper.appendChild(addAptBtn)
 
             outerDiv.appendChild(wrapper)
         })
@@ -81,6 +83,8 @@ function reLoadListings() {
 }
 
 // fetchListings();
+
+
 
 
 function filterListings (event) {

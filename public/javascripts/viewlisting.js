@@ -37,13 +37,13 @@ function reLoadListings() {
     document.getElementById("formControlRange3").value
     ptag = document.getElementById("slider-value3");
     ptag.innerText = slidervalue3;
-    
+
 // console.log(slidervalue1)
 
     }
 
-  //fetching api for apartment POST 
-  function fetchListings () {
+  //fetching api for apartment POST
+  async function fetchListings() {
     let listingsHTML = document.getElementById('feed');
 
     let outerDiv = document.createElement('div');
@@ -53,11 +53,13 @@ function reLoadListings() {
     let minPrice = 0;
     let minSize = 0;
 
-   
-    fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`).then((response) => {
-        console.log(response.json())
-        return response.json();
-    }).then((res) => {
+
+    let response = await fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`)
+    let res = await response.json();
+    // await fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`,
+    // { method: "POST", headers: {'Content-Type': 'application/json'}}).then((response) => {
+    //     return response.json();
+    // }).then((res) => {
         console.log('Res is: ', res.data)
         let listings = res.data;
         listings.map((item) => {
@@ -73,12 +75,12 @@ function reLoadListings() {
 
             outerDiv.appendChild(wrapper)
         })
-    }).catch((err) => console.log('Something went wrong: ',err))
+    // }).catch((err) => console.log('Something went wrong: ',err))
 
    listingsHTML && listingsHTML.appendChild(outerDiv)
 }
 
-fetchListings();
+// fetchListings();
 
 
 function filterListings (event) {

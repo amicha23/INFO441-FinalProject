@@ -2,444 +2,444 @@
     "listings": [
         {   
             "size": 500,
-            "placeName": "the M Apartments",
-            "area": "4700 Brooklyn Ave",
+            "placeName": "Acsent South Lake Union",
+            "area": "1145 Republican St.",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1400",
-            "distanceAway": "1",
+            "distanceAway": "8",
             "features": "studio, open kitchen, rooftop",
             "image": "./img/newphoto.jpg",
-            "description": "Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+            "description": "Hi! My name is Raphael and I'm leasing my unit in this 4-bedroom apartment at the Acsent South Lake Union! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
             "size": 1800,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "AMLI Wallingford",
+            "area": "1850 M 34th St",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1000",
             "distanceAway": "2",
             "features": "private bedrooms, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Cliff, and I'm leasing my unit in AMLI Wallingford. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @cliff123 if you're interested."
         },
         {
             "size": 340,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Alcyone",
+            "area": "301 Minor Ave N",
             "leasingTerm": "May 2021 - May 2022",
             "price": "1100",
             "distanceAway": "3",
             "features": "private bathroom, balcony, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Dale, and I'm leasing my unit in Alcyone. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 450,
-            "placeName": "the M Apartments",
-            "area": "4700 Brooklyn Ave",
+            "placeName": "Cascade Apartments",
+            "area": "221 Minor Ave N",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1200",
             "distanceAway": "2",
             "features": "private bathroom, in-unit laundry, large kitchen, rooftop",
             "image": "img/kitchen.jpeg",
-            "description":"Hi there my name's Sahithi and I'm living in the M apartments, I live in a 3-bedroom. One of my roommates is looking to move out so my other roommate and I are helping her sublease her apartment. Message me on instagram @sahithi2400 if you're interested."
+            "description":"Hi there my name's Chris and I'm living in the Cascade Apartments, I live in a 3-bedroom. One of my roommates is looking to move out so my other roommate and I are helping her sublease her apartment. Message me on instagram @chris123 if you're interested."
         },
         {
             "size": 600,
-            "placeName": "Kennedy Apartments",
-            "area": "45th Street",
+            "placeName": "Green Lake Village",
+            "area": "427 NE 72nd St",
             "leasingTerm": "July 2021 - July 2022",
             "price": "500",
             "distanceAway": "1",
             "features": "1 bedroom, balcony, large kitchen",
             "image": "img/house1.jpg",
-            "description":"Hi, I'm Jack. I'm leasing my unit in Kennedy Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
+            "description":"Hi, I'm Jimmie. I'm leasing my unit in Green Lake Village. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
         },
         {
             "size": 660,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Broadstone Vin",
+            "area": "4106 Stone Way N",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1500",
             "distanceAway": "0",
             "features": "private bathroom, in-unit laundry, large kitchen",
             "image": "img/living-room.jpg",
-            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description":"Hi! My name is Jeremy, and I'm leasing my unit in Broadstone Vin. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 750,
-            "placeName": "the M Apartments",
-            "area": "4700 Brooklyn Ave",
+            "placeName": "Juxt",
+            "area": "810 Dexter Ave N",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "800",
             "distanceAway": "2",
             "features": "private bathroom, in-unit laundry, rooftop",
             "image": "./img/newphoto.jpg",
-            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+            "description":"Hi! My name is Kim and I'm leasing my unit in this 4-bedroom apartment at the Juxt! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
             "size": 850,
-            "placeName": "Kennedy Apartments",
-            "area": "45th Street",
+            "placeName": "Marlowe",
+            "area": "1146 Harrison Street",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1700",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description": "Hi, I'm Jack. I'm leasing my unit in Kennedy Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
+            "description": "Hi, I'm Mickey. I'm leasing my unit in Marlowe Apartment. I want to find another person to take over my lease as soon as possible. Here's my number [4256758924], send me a text if you are interested (please don't call)."
         },
         {
             "size": 900,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "The Theo",
+            "area": "815 Norteast 66th Street",
             "leasingTerm": "July 2021 - July 2022",
             "price": "300",
             "distanceAway": "2",
             "features": "private bathroom, in-unit laundry, stairs",
             "image": "img/house1.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Quinton, and I'm leasing my unit in The Theo. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @quinton123 if you're interested."
             
         },
         {
             "size": 1050,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Sitka",
+            "area": "1225 East Harrison Street",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1800",
             "distanceAway": "2",
             "features": "private bathroom, in-unit laundry, large kitchen, stairs",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description":"Hi! My name is Dwayne, and I'm leasing my unit in Sitka. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 1150,
-            "placeName": "the M Apartments",
-            "area": "4700 Brooklyn Ave",
+            "placeName": "Eastlake Union",
+            "area": "2851 Eastlake Ave",
             "leasingTerm": "June 2021 - June 2022",
             "price": "500",
             "distanceAway": "5",
             "features": "balcony, large kitchen, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+            "description":"Hi! My name is Donny and I'm leasing my unit in this 4-bedroom apartment at Eastlake Union! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
             "size": 1250,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Circa Green Lake",
+            "area": "6900 E Green Lake Way N",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1200",
             "distanceAway": "3",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Aurelio, and I'm leasing my unit in Circa Green Lake. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @aurelio123 if you're interested."
         },
         {
             "size": 340,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Augusta",
+            "area": "4041 Roosevelt Way NE",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1000",
             "distanceAway": "4",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description":"Hi! My name is Vern, and I'm leasing my unit in Augusta. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 1400,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Smith & Burns",
+            "area": "4455 Interlake Avenue North",
             "leasingTerm": "July 2021 - July 2022",
             "price": "600",
             "distanceAway": "5",
             "features": "in-unit laundry, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Jess, and I'm leasing my unit in Smith & Burns. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @jess123 if you're interested."
         },
         {
             "size": 1500,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Mera",
+            "area": "630 Boren Avenue North",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1300",
             "distanceAway": "4",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Peter, and I'm leasing my unit in Mera Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @peter123 if you're interested."
         },
         {
             "size": 1650,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Bowman Stone Way",
+            "area": "3801 Stone Way N",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1400",
             "distanceAway": "3",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description":"Hi! My name is Hank, and I'm leasing my unit in Bowman Stone Way. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 350,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "The Malloy",
+            "area": "4337 15th Ave NE",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1050",
             "distanceAway": "5",
             "features": "four bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Darin, and I'm leasing my unit in The Malloy. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
             "size": 580,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Vida",
+            "area": "1205 Northeast 66th Street",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1150",
             "distanceAway": "4",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Grady, and I'm leasing my unit in Vida Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @grady123 if you're interested."
         },
         {
             "size": 490,
-            "placeName": "the M Apartments",
-            "area": "4700 Brooklyn Ave",
+            "placeName": "The Lyric",
+            "area": "215 10th Ave",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1100",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+            "description":"Hi! My name is Foster and I'm leasing my unit in this 4-bedroom apartment at The Lyric! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
             "size": 250,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Sundodger",
+            "area": "4218 Roosevelt Way NE",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1100",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description":"Hi! My name is Evan, and I'm leasing my unit in Sundodger. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 210,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Rooster",
+            "area": "900 NE 65th St",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1800",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "./img/newphoto.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Olson, and I'm leasing my unit in Rooster Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @olson123 if you're interested."
         },
         {
             "size": 220,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Rivet Apartment Homes",
+            "area": "1201 Mercer St",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1700",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description":"Hi! My name is Joey, and I'm leasing my unit in Rivet Apartment Homes. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 523,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Wilsonian",
+            "area": "4710 University Way NE",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1400",
             "distanceAway": "3",
             "features": "private bathroom, balcony, large kitchen, in-unit laundry",
             "image": "img/living-room.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Fanny, and I'm leasing my unit in Wilsonian. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Fanny123 if you're interested."
         },
         {
             "size": 424,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Session",
+            "area": "1717 22nd Ave",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1050",
             "distanceAway": "5",
             "features": "balcony, large kitchen, stairs, rooftop",
             "image": "./img/newphoto.jpg",
-            "description":"Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description":"Hi! My name is Alex, and I'm leasing my unit in Session Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Alex123 if you're interested."
         },
         {
             "size": 425,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Prescott",
+            "area": "3920 Stone Way N",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1000",
             "distanceAway": "4",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Taylor, and I'm leasing my unit in Prescott. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 650,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Equinox",
+            "area": "1524 Eastlake Ave E",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1500",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Donald, and I'm leasing my unit in Equinox Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Donald123 if you're interested."
         },
         {
             "size": 280,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Summit at Madison Park",
+            "area": "1819 23rd Ave",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1600",
-            "distanceAway": "2",
+            "distanceAway": "9",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Ania, and I'm leasing my unit in Summit at Madison Park. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Ania123 if you're interested."
         },
         {
             "size": 480,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Gatsby",
+            "area": "1145 10th Ave E",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1250",
             "distanceAway": "4",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Gatsby. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 330,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Epicenter Apartments",
+            "area": "620 N 34th St",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1100",
             "distanceAway": "3",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is True, and I'm leasing my unit in Epicenter Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @True123 if you're interested."
         },
         {
             "size": 430,
-            "placeName": "the M Apartments",
-            "area": "4700 Brooklyn Ave",
+            "placeName": "Lothlorien",
+            "area": "4730 University Way NE",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1150",
-            "distanceAway": "2",
+            "distanceAway": "7",
             "features": "private bathroom, balcony, large kitchen, stairs",
             "image": "./img/newphoto.jpg",
-            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the Lothlorien! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
             "size": 530,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Helm",
+            "area": "602 Terry Avenue North",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1200",
             "distanceAway": "2",
             "features": "private bathroom, balcony, in-unit laundry, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Helm Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
         },
         {
             "size": 430,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Fox & Finch",
+            "area": "525 Boren Ave N",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1700",
             "distanceAway": "1",
             "features": "studio, balcony, large kitchen, stairs",
             "image": "img/living-room.jpg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Fox & Finch. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 530,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Carolina Court",
+            "area": "527 Eastlake Ave E",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1800",
-            "distanceAway": "0",
+            "distanceAway": "7",
             "features": "one bedroom, large kitchen, stairs",
             "image": "img/living-room.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Hannah, and I'm leasing my unit in Carolina Court. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Hannah123 if you're interested."
         },
         {
             "size": 530,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Enve on Eastlake",
+            "area": "1901 Franklin Ave E",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1300",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Enve on Eastlake. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 650,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Inspire",
+            "area": "3825 Bridge Way North",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1100",
             "distanceAway": "3",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Andrew, and I'm leasing my unit in Inspire Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Andrew123 if you're interested."
         },
         {
             "size": 630,
-            "placeName": "the M Apartments",
+            "placeName": "St. James Tower",
             "area": "4700 Brooklyn Ave",
             "leasingTerm": "June 2021 - June 2022",
             "price": "1350",
             "distanceAway": "4",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/kitchen.jpeg",
-            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at the M! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
+            "description":"Hi! My name is Lexi and I'm leasing my unit in this 4-bedroom apartment at St. James Tower! I'm looking for someone to take over my lease because I'll be heading home. My roommates are 3 other girls who are super sweet."
         },
         {
             "size": 630,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Alley24",
+            "area": "241 Yale Ave N",
             "leasingTerm": "July 2021 - July 2022",
             "price": "1500",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Joy, and I'm leasing my unit in Alley24. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         },
         {
             "size": 530,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Centerline",
+            "area": "1420 NE 65th St",
             "leasingTerm": "Sept 2021 - Sept 2022",
             "price": "1400",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/house1.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Ben, and I'm leasing my unit in Centerline. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Ben123 if you're interested."
         },
         {
             "size": 630,
-            "placeName": "Savannah Apartments",
-            "area": "45th Street",
+            "placeName": "Helix Ellipse",
+            "area": "4725 12th Ave NE",
             "leasingTerm": "Aug 2021 - Aug 2022",
             "price": "1300",
             "distanceAway": "2",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "img/living-room.jpg",
-            "description": "Hi! My name is Ben, and I'm leasing my unit in Savannah Apartments. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @BenAlphaAlpha if you're interested."
+            "description": "Hi! My name is Jack, and I'm leasing my unit in Helix Ellipse. I'm looking for someone to take over my lease because I found a new apartment. Message me on facebook @Jack123 if you're interested."
         },
         {
             "size": 540,
-            "placeName": "Twelve at U District",
-            "area": "12th Street",
+            "placeName": "Square One Apartments",
+            "area": "1020 NE 63rd St",
             "leasingTerm": "June 2021 - June 2022",
             "price": "700",
             "distance": "3",
             "features": "private bathroom, balcony, large kitchen, stairs, rooftop",
             "image": "./img/newphoto.jpg",
-            "description": "Hi! My name is Joy, and I'm leasing my unit in Twelve at U District. I'm looking for someone to take over my lease because I'm heading back home for vacation."
+            "description": "Hi! My name is Annabeth, and I'm leasing my unit in Square One Apartments. I'm looking for someone to take over my lease because I'm heading back home for vacation."
         }
     ]
 }

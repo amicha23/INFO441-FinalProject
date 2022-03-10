@@ -11,8 +11,8 @@ const isEmptyObject = (object) => {
 // create a new post
 router.post('/api/post', async function(req, res) {
   try {
-   const {placeName, area, size, distanceAway, price, description, leasingterm} = req.body;
-    const newPost = new req.db.Apartment({ placeName, area, size, distanceAway, price, description, leasingterm});
+   const {placeName, area, size, distanceAway, price, description, leasingterm, roommates, features, image} = req.body;
+    const newPost = new req.db.Apartment({ placeName, area, size, distanceAway, price, description, leasingterm, roommates, features, image });
     await newPost.save();
     if(newPost) {
     return res.json({
@@ -29,12 +29,12 @@ router.post('/api/post', async function(req, res) {
 
 // gets all posts or filters by passed params
 router.get('/api/post', async function(req, res) {
-  try { 
+  try {
 
     if(isEmptyObject(req.query)) {
       console.log('Req db is: ', req.db)
       const allPosts = await req.db.Apartment.find()
-      return res.json({ status: 'success', data: allPosts})
+      res.json({ status: 'success', data: allPosts})
     }else {
       const { distanceAway, minPrice, maxPrice, minSize, maxSize } = req.query;
 
@@ -45,13 +45,14 @@ router.get('/api/post', async function(req, res) {
           { size: { $lte: maxSize || 1000000, $gte: minSize || 0 } }
         ]
       })
-      return res.json({status: 'success', data: filteredPosts})
+      console.log(filteredPosts)
+      res.json({"status": "success", "data": filteredPosts})
     }
 
-    
+
   }catch(err) {
     console.log('Error is: ', err)
-    return res.status(400).json({
+    res.status(400).json({
       message: 'Could not get posts'
     })
   }

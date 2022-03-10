@@ -8,9 +8,10 @@
   <title>Student Apartments</title>
   <!-- css links -->
   <link rel="stylesheet" href="stylesheets/style.css">
-  <!-- <script src="javascripts/identity.js"></script>
-  <script src="javascripts/Profile.js"></script> -->
-  <!-- <script src="javascripts/Apartment.js"></script> -->
+  <script src="javascripts/identity.js"></script>
+  <script src="javascripts/viewlisting.js"></script>
+  <script src="javascripts/Profile.js"></script>
+  <script src="javascripts/Apartment.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Encode+Sans:900">
   <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css">
@@ -58,7 +59,8 @@
         <form id="pricefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
-            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="formControlRange1">
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10000" step="125" value="0" id="formControlRange1">
+            <p id="slider-value1">0</p>
           </div>
         </form>
 
@@ -69,14 +71,23 @@
         <form id="distanceAwayfilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
-            <input type="range" class="form-control-range" min="0" max="5" step="1" value="0" id="formControlRange2">
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10" step="1" value="0" id="formControlRange2">
+            <p id="slider-value2">0</p>
           </div>
           <!-- <input type="submit" name="search" value="Search" /> -->
         </form>
         </span>
 
-        <span class="right">
-          <a onclick="saveApt('LiveNLove')" class="btn btn-dark addListBtn" role="button">Add Listing</a> <!-- Hard coded right now, change when all listings finished -->
+
+        <button class="btn filter" id="sizefilterbtn">Range of size</button>
+        <form id="sizefilter">
+          <div class="range-wrap">
+            <div class="range-value" id="rangeV3"></div>
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="5000" step="100" value="0" id="formControlRange3">
+            <p id="slider-value3">0</p>
+          </div>
+          <input type="button" name="search" value="Search" onclick="fetchListings()" />
+        </form>
         </span>
 
 
@@ -111,9 +122,6 @@
         </form>
       </div>
 
-      <div class="searchBox" role="search" id="searchBox">
-        <input class="card-text" type="text" placeholder="Search by Location or Point of Interest">
-      </div>
     </div>
 
     <div class="row">
@@ -137,9 +145,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
 
-  <script src="javascripts/Apartment.js"></script>
-  <script src="javascripts/identity.js"></script>
-  <script src="javascripts/viewlisting.js "></script>
 </body>
 
 </html>

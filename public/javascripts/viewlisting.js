@@ -116,24 +116,40 @@ let listingsHTML = document.getElementById('feed');
 
 
 
-const reLoadListings =  () => {
-    let minPrice = document.getElementById("formControlRange1").min
-    let maxPrice = document.getElementById("formControlRange1").max
-    let minSize = document.getElementById("formControlRange3").min
-    let maxSize = document.getElementById("formControlRange3").max
-    let distanceAway = document.getElementById("formControlRange2")
-    //TODO get distance and size
+function reLoadListings() {
+    let slidervalue1 = document.getElementById("formControlRange1").value;
+    document.getElementById("formControlRange1").value
+    let ptag = document.getElementById("slider-value1");
+    ptag.innerText = slidervalue1;
 
-    fetchListings(distanceAway, minPrice, maxPrice, minSize, maxSize);
+    let slidervalue2 = document.getElementById("formControlRange2").value;
+    document.getElementById("formControlRange2").value
+     ptag = document.getElementById("slider-value2");
+    ptag.innerText = slidervalue2;
 
-}
+    let slidervalue3 = document.getElementById("formControlRange3").value;
+    document.getElementById("formControlRange3").value
+    ptag = document.getElementById("slider-value3");
+    ptag.innerText = slidervalue3;
+    
+// console.log(slidervalue1)
+
+    }
+
   //fetching api for apartment POST 
-const fetchListings = (distanceAway = 10, minPrice = 0, maxPrice = 100000, minSize = 0, maxSize = 100000) => {
+  function fetchListings () {
     let listingsHTML = document.getElementById('feed');
 
     let outerDiv = document.createElement('div');
+    let maxPrice = document.getElementById("slider-value1").innerHTML;
+    let distanceAway = document.getElementById("slider-value2").innerHTML;
+    let maxSize = document.getElementById("slider-value3").innerHTML;
+    let minPrice = 0;
+    let minSize = 0;
+
    
     fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`).then((response) => {
+        console.log(response.json())
         return response.json();
     }).then((res) => {
         console.log('Res is: ', res.data)
@@ -159,7 +175,7 @@ const fetchListings = (distanceAway = 10, minPrice = 0, maxPrice = 100000, minSi
 fetchListings();
 
 
-const filterListings = (event) => {
+function filterListings (event) {
     event.preventDefault();
     const priceFilter = document.getElementById('priceFilter').value;
     const distanceAwayfilter = document.getElementById('distanceAwayfilter').value;

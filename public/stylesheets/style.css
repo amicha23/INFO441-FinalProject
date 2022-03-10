@@ -48,6 +48,12 @@ h3 {
   font-weight: 300;
 }
 
+.widgit {
+  font-weight: 800;
+  font-size: 18px;
+  padding-bottom: 0.5em;
+}
+
 
 /*specialized title for available listings*/
 
@@ -343,6 +349,7 @@ img {
   }
   .viewImg {
       height: 50vh;
+      width: 50%;
       max-width: 80%;
   }
 }
@@ -355,6 +362,9 @@ img {
   }
   .filterby {
       margin-left: 13em;
+  }
+  .filterSlide {
+    margin-left: 35em;
   }
   .card-text,
   .card-title {

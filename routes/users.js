@@ -44,7 +44,7 @@ async function getHtml(apt) {
     htmlReturn = `<div>
                     <h2 id=${apt["placeName"]} class="detail-titles">${apt["placeName"]}</h2>
                     <flex class="center">
-                        <img class="viewImg" src="img/living-room.jpg" alt="photo of the living room of the apartment" loading="lazy">
+                        <img class="viewImg" src=${apt["image"]} alt="photo of ${apt["placeName"]}  " loading="lazy">
                     </flex>
                 </div>
 
@@ -63,7 +63,7 @@ async function getHtml(apt) {
                                         <p class="card-text">Area: ${apt["area"]}</p>
                                         <p class="card-text">Location: Savanna located on 45th</p>
                                         <p class="card-text">Distance Away: ${apt["distanceAway"]} mi</p>
-                                        <p class="card-text">Leasing Term: ${apt["leasingterm"]} months</p>
+                                        <p class="card-text">Features: ${apt["features"]}</p>
                                         <p class="card-text">Size: ${apt["size"]} SqFt</p>
                                         <p class="card-text">Price: $${apt["price"]} per month</p>
                                         <a onclick="unsaveApt('${apt["placeName"]}')" id=${apt["placeName"]} class="saved btn btn-dark" href="#" role="button">

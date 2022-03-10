@@ -49,46 +49,57 @@
   <main>
     <div class="title">
       <h1 class="description">Discover Your New Home</h1>
-      <h2 class="description">Choose from over thousands of apartments, houses, condos and townhomes for rent near:</h2>
+      <h2 class="description text-center">Choose from over thousands of apartments, houses, condos and townhomes for rent near:</h2>
       <div class="uw-logo">The University of Washington</div>
     </div>
 
     <div class="filterby">
+      <div class="filterSlide">
       <span>
-        <button class="btn filter" id="pricefilterbtn">Price Limit</button>
+        <button class="btn filter" id="pricefilterbtn">Price Limit ($)</button>
         <form id="pricefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
             <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10000" step="125" value="0" id="formControlRange1">
-            <p id="slider-value1">0</p>
+            <div class="text-center">
+              <span class="widgit d-inline">$</span>
+              <p id="slider-value1" class="widgit text-center d-inline">0</p>
+            </div>
           </div>
         </form>
 
 
           <!-- <button class="btn filter" id="distanceAwayfilterbtn">Maximum Distance from Campus</button> -->
 
-        <button class="btn filter" id="distanceAwayfilterbtn">Maximum Distance Away from Campus</button>
+        <button class="btn filter" id="distanceAwayfilterbtn">Maximum Distance Away from Campus (mi)</button>
         <form id="distanceAwayfilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
             <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10" step="1" value="0" id="formControlRange2">
-            <p id="slider-value2">0</p>
+            <div class="text-center">
+              <p id="slider-value2" class="widgit text-center d-inline">0</p>
+              <span class="widgit d-inline">mi</span>
+            </div>
           </div>
           <!-- <input type="submit" name="search" value="Search" /> -->
         </form>
         </span>
 
 
-        <button class="btn filter" id="sizefilterbtn">Range of size</button>
+        <button class="btn filter" id="sizefilterbtn">Range of size (Sq Ft)</button>
         <form id="sizefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV3"></div>
             <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="5000" step="100" value="0" id="formControlRange3">
-            <p id="slider-value3">0</p>
+            <div class="text-center">
+              <p id="slider-value3" class="widgit text-center d-inline">0</p>
+              <span class="widgit d-inline">Sq Ft</span>
+            </div>
           </div>
-          <input type="button" name="search" value="Search" onclick="fetchListings()" />
+        </div>
+          <input type="button" name="search" value="Search" class="mt-5" onclick="fetchListings()" />
         </form>
-        </span>
+      </span>
 
 
       <div class="formContainer">
@@ -125,7 +136,7 @@
     </div>
 
     <div class="row">
-      <h2 class="available">Showing available listings:</h2>
+      <h2 class="available m-5">Showing available listings:</h2>
 
       <div id="feed" class="row">
       </div>

@@ -46,45 +46,6 @@
         </div>
         <div id="user_info_div">
         </div>
-
-        <div>
-          <h2 class="detail-titles">Location</h2>
-          <div id="map"></div>
-          <script>
-            function initMap() {
-                var test = {
-                    lat: 47.6593,
-                    lng: 117.4216
-                };
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
-                    center: test
-                });
-                var marker = new google.maps.Marker({
-                    position: test,
-                    map: map
-                });
-              }
-          </script>
-        </div>
-
-        <div class="formDiv">
-            <form>
-                <label for="name"></label>
-                <input class="formStyle card-text" placeholder="Name" type="text" id="name" name="name"><br>
-
-                <label for="email"></label>
-                <input class="formStyle card-text" placeholder="Email" type="text" id="email" name="email"><br>
-
-                <label for="phone"></label>
-                <input class="formStyle card-text" placeholder="Phone Number" type="text" id="phone" name="phone"><br>
-
-                <label for="contactmessage"></label>
-                <textarea class="card-text" id="contactmessage" name="contactmessage" placeholder="Message..."></textarea><br>
-
-                <input class="card-text contactlister" type="submit" value="Contact Lister">
-            </form>
-        </div>
       </main>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnngaP8VoZ5zsU880YlHOmUsEg35eYpOE&callback=initMap&libraries=&v=weekly" async></script>

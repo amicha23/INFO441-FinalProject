@@ -66,12 +66,48 @@ async function fetchListings() {
             listingName.innerHTML = `${item.placeName}`;
             area.innerHTML = `${item.area}`;
 
-            addAptBtn.innerHTML= `<a id='${item.placeName}-addbtn' onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
-            wrapper.appendChild(listingName)
-            wrapper.appendChild(area)
-            wrapper.appendChild(addAptBtn)
+            wrapper.innerHTML = `<div>
+                                    <h2 id=${item["placeName"]} class="detail-titles">${item["placeName"]}</h2>
+                                    <flex class="center">
+                                        <img class="viewImg" src=${item["image"]} alt="photo of ${item["placeName"]}" loading="lazy">
+                                    </flex>
+                                </div>
+
+                                <div class="row">
+                                    <div class="card-row">
+                                        <div class="column mb-4">
+                                            <p class="card-text text-center">
+                                                Description: ${item["description"]}
+                                            </p>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="card mb-4">
+                                                <div class="description card-body">
+                                                    <div>
+                                                        <p class="card-text">Area: ${item["area"]}</p>
+                                                        <p class="card-text">Location: Savanna located on 45th</p>
+                                                        <p class="card-text">Distance Away: ${item["distanceAway"]} mi</p>
+                                                        <p class="card-text">Features: ${item["features"]} </p>
+                                                        <p class="card-text">Size: ${item["size"]} SqFt</p>
+                                                        <p class="card-text">Price: $${item["price"]} per month</p>
+                                                        <a id='${item.placeName}-addbtn' onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>`
+
+
+            // addAptBtn.innerHTML= `<a id='${item.placeName}-addbtn' onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
+            // wrapper.appendChild(listingName)
+            // wrapper.appendChild(area)
+            // wrapper.appendChild(addAptBtn)
 
             outerDiv.appendChild(wrapper)
+
+
         })
         listingsHTML && listingsHTML.appendChild(outerDiv)
     } catch(error) {

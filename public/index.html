@@ -9,6 +9,8 @@
   <!-- css links -->
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="javascripts/identity.js"></script>
+  <script src="javascripts/viewlisting.js"></script>
+  <script src="javascripts/Profile.js"></script>
   <script src="javascripts/Apartment.js"></script>
   <link rel="icon" type="image/png" href="img/home-icon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Encode+Sans:900">
@@ -19,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body onload="loadListings()">
+<body onload="loadListings()"> <!-- Hides "saved listings" button if not logged in -->
   <header class="header">
     <nav class="navbar">
       <a href="index.html" class="nav-logo"><span class="logo-img" aria-hidden="true">&nbsp;</span>Student
@@ -31,7 +33,7 @@
       </button>
       <ul class="nav-menu" id="nav-menu2">
         <li class="nav-item">
-          <a id="listings" href="viewlistings.html" class="nav-link">Saved Listings</a>
+          <a id="listings" href="savedlistings.html" class="nav-link">Saved Listings</a>
         </li>
         <li class="nav-item">
           <a href="landing.html" class="nav-link">About</a>
@@ -57,7 +59,8 @@
         <form id="pricefilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV1"></div>
-            <input type="range" class="form-control-range" min="900" max="1800" step="100" value="900" id="formControlRange1">
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10000" step="125" value="0" id="formControlRange1">
+            <p id="slider-value1">0</p>
           </div>
         </form>
 
@@ -68,14 +71,27 @@
         <form id="distanceAwayfilter">
           <div class="range-wrap">
             <div class="range-value" id="rangeV2"></div>
-            <input type="range" class="form-control-range" min="0" max="5" step="1" value="0" id="formControlRange2">
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="10" step="1" value="0" id="formControlRange2">
+            <p id="slider-value2">0</p>
           </div>
           <!-- <input type="submit" name="search" value="Search" /> -->
         </form>
         </span>
 
+
+        <button class="btn filter" id="sizefilterbtn">Range of size</button>
+        <form id="sizefilter">
+          <div class="range-wrap">
+            <div class="range-value" id="rangeV3"></div>
+            <input type="range" onchange="reLoadListings()" class="form-control-range" min="0" max="5000" step="100" value="0" id="formControlRange3">
+            <p id="slider-value3">0</p>
+          </div>
+          <input type="button" name="search" value="Search" onclick="fetchListings()" />
+        </form>
+        </span>
+
         <span class="right">
-          <a class="btn btn-dark addListBtn" role="button">Add Listing</a>
+          <a onclick="saveApt('LiveNLove')" class="btn btn-dark addListBtn" role="button">Add Listing</a> <!-- Hard coded right now, change when all listings finished -->
         </span>
 
 
@@ -117,6 +133,7 @@
 
     <div class="row">
       <h2 class="available">Showing available listings:</h2>
+
       <div id="feed" class="row">
       </div>
     </div>
@@ -126,23 +143,15 @@
     <p>Copyright© StudentApartments, Inc.</p>
   </footer>
 
-  <!-- Imports - fetch -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
 
-  <!-- Imports - Bootstrap JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
+    <!-- Bootstrap JavaScript Imports -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
 
-  <script src="javascripts/Apartment.js"></script>
 </body>
 
 </html>

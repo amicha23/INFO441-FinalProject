@@ -46,12 +46,18 @@ We as students want to build this application because we understand the process 
 {
   
   "username": "{username}",
-  "saved": [{apt name}, {apt name}...],
+  "saved": [{apt name}, {apt name}...]
 }
 ```
 
+- POST /user
+  - Saves unique users to the database by their username.
+
 - POST /users/saveApt
   - An endpoint for users to update their saved list of apartments.
+
+- POST /users/unsaveApt
+  - An enpoint for users to remove listings from their saved list of apartments.
 
 **Apartments**
 

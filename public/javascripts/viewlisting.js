@@ -43,9 +43,9 @@ function reLoadListings() {
     }
 
   //fetching api for apartment POST
-  async function fetchListings() {
+async function fetchListings() {
     let listingsHTML = document.getElementById('feed');
-
+    listingsHTML.innerHTML = '';
     let outerDiv = document.createElement('div');
     let maxPrice = document.getElementById("slider-value1").innerHTML;
     let distanceAway = document.getElementById("slider-value2").innerHTML;
@@ -53,34 +53,35 @@ function reLoadListings() {
     let minPrice = 0;
     let minSize = 0;
 
-
-    let response = await fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`)
-    let res = await response.json();
-    // await fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`,
-    // { method: "POST", headers: {'Content-Type': 'application/json'}}).then((response) => {
-    //     return response.json();
-    // }).then((res) => {
+    try {
+        let response = await fetch(`/api/post?distanceAway=${distanceAway}&minPrice=${minPrice}&maxPrice=${maxPrice}&minSize=${minSize}&maxSize=${maxSize}`)
+        let res = await response.json();
         console.log('Res is: ', res.data)
         let listings = res.data;
         listings.map((item) => {
             let wrapper = document.createElement('div');
             let listingName = document.createElement('h1');
             let area = document.createElement('p')
-
+            let addAptBtn = document.createElement('span');
             listingName.innerHTML = `${item.placeName}`;
             area.innerHTML = `${item.area}`;
 
+            addAptBtn.innerHTML= `<a onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
             wrapper.appendChild(listingName)
             wrapper.appendChild(area)
+            wrapper.appendChild(addAptBtn)
 
             outerDiv.appendChild(wrapper)
         })
-    // }).catch((err) => console.log('Something went wrong: ',err))
-
-   listingsHTML && listingsHTML.appendChild(outerDiv)
+        listingsHTML && listingsHTML.appendChild(outerDiv)
+    } catch(error) {
+        listingsHTML.innerHTML = 'could not load posts';
+    }
 }
 
 // fetchListings();
+
+
 
 
 function filterListings (event) {

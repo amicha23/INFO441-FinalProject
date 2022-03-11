@@ -1,6 +1,8 @@
-'use strict'
+// Request apartment data from the database
+// based on user filtering and display this
+// information in separate cards.
 
-//import { response } from "express";
+'use strict'
 
 let hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener('click', myFunctionham1);
@@ -21,7 +23,7 @@ function myFunctionham1() {
 let listingsHTML = document.getElementById('feed');
 
 
-
+// Display slider values
 function reLoadListings() {
     let slidervalue1 = document.getElementById("formControlRange1").value;
     document.getElementById("formControlRange1").value
@@ -30,7 +32,7 @@ function reLoadListings() {
 
     let slidervalue2 = document.getElementById("formControlRange2").value;
     document.getElementById("formControlRange2").value
-     ptag = document.getElementById("slider-value2");
+    ptag = document.getElementById("slider-value2");
     ptag.innerText = slidervalue2;
 
     let slidervalue3 = document.getElementById("formControlRange3").value;
@@ -38,11 +40,9 @@ function reLoadListings() {
     ptag = document.getElementById("slider-value3");
     ptag.innerText = slidervalue3;
 
-// console.log(slidervalue1)
+}
 
-    }
-
-  //fetching api for apartment POST
+// fetching api for apartment data
 async function fetchListings() {
     let listingsHTML = document.getElementById('feed');
     listingsHTML.innerHTML = '';
@@ -62,7 +62,6 @@ async function fetchListings() {
             let wrapper = document.createElement('div');
             let listingName = document.createElement('h1');
             let area = document.createElement('p')
-            let addAptBtn = document.createElement('span');
             listingName.innerHTML = `${item.placeName}`;
             area.innerHTML = `${item.area}`;
 
@@ -99,12 +98,6 @@ async function fetchListings() {
                                     </div>
                                 </div>`
 
-
-            // addAptBtn.innerHTML= `<a id='${item.placeName}-addbtn' onclick="saveApt('${item.placeName}')" class="btn btn-dark addListBtn" role="button">Add Listing</a>`
-            // wrapper.appendChild(listingName)
-            // wrapper.appendChild(area)
-            // wrapper.appendChild(addAptBtn)
-
             outerDiv.appendChild(wrapper)
 
 
@@ -115,11 +108,10 @@ async function fetchListings() {
     }
 }
 
-// fetchListings();
 
 
 
-
+// Filter apartment listings
 function filterListings (event) {
     event.preventDefault();
     const priceFilter = document.getElementById('priceFilter').value;

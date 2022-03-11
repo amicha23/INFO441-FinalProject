@@ -1,11 +1,12 @@
+// Endpoints that control the flow of user data. The endpoints
+// access our database to retrieve user data and respond to
+// requests with the specified user's saved information.
+
 import express from 'express';
 var router = express.Router();
 
-/* GET user info. */
+// GET all of a user's saved apartment listings.
 router.get('/', async function(req, res, next) {
-  console.log(req.session)
-  // let session = req.session;
-  // let testUsername = "test user";
   if (req.session.isAuthenticated) {
     let testUsername = req.session.account.username;
     console.log(testUsername);
@@ -25,8 +26,6 @@ router.get('/', async function(req, res, next) {
           console.log(htmlReturn)
           allPreviews.push(htmlReturn);
         }
-        console.log(allPreviews)
-        // res.json(apt);
         res.json(allPreviews);
       }
     } catch(error) {
@@ -82,10 +81,9 @@ async function getHtml(apt) {
 }
 
 
-// Save User through login
+// On the click of login, check if a user is unique.
+// If so, save a new user to the database.
 router.post('/', async function(req, res, next) {
-  // let testUsername = "another user";
-  // let testUsername = req.body.username;
   let testUsername = req.body.username;
   console.log(testUsername)
   try {
@@ -93,10 +91,8 @@ router.post('/', async function(req, res, next) {
     if (checkUser.length > 0) {
       res.json({"status": "error", "error": "already have an acccount"})
     } else {
-      // await req.db.User.find()
       const User = new req.db.User({
         username: testUsername,
-        // username: session.account.username,
         saved: [],
         saved_date: new Date().toLocaleDateString()
       })
@@ -108,20 +104,15 @@ router.post('/', async function(req, res, next) {
   }
 });
 
-// Add apt to saved listings
+// Add a unique apt to the saved listings of the user.
 router.post('/saveApt', async function(req, res, next) {
-  // let testUsername = "test user";
-  // let session = req.session;
   if (req.session.isAuthenticated) {
     let testUsername = req.session.account.username;
-    console.log("here username:", testUsername)
     try {
       let newSave = req.query.apt; // or req.body.apt;
       let findUser = testUsername;
       let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
-      console.log(userInfo);
       // load post from the database
-
       if (!userInfo[0].saved.includes(newSave)) {
         //Include currently logged in user
         userInfo[0].saved.push(newSave);
@@ -136,13 +127,12 @@ router.post('/saveApt', async function(req, res, next) {
   }
 })
 
-// Remove saved apt from saved listings
+// Remove saved apt from saved listings of a user.
 router.post('/unsaveApt', async function(req, res, next) {
   if (req.session.isAuthenticated) {
-    // let testUsername = "test user";
     let testUsername = req.session.account.username;
     try {
-      let findApt = req.query.apt; // or body param
+      let findApt = req.query.apt;
       let findUser = testUsername;
       let userInfo = await req.db.User.find().where('username').in(findUser).exec(); //change to db name
         if (userInfo[0].saved.includes(findApt)) {
@@ -174,7 +164,6 @@ router.get('/getIdentity', async function(req, res, next) {
          "username": session.account.username
         }
     }
-    console.log(loginInfo);
     res.json(loginInfo);
   } else {
     res.json({"status": "loggedout" })

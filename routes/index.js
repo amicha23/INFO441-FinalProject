@@ -1,3 +1,6 @@
+// Endpoints that control the flow of apartment data. The endpoints
+// access our database and respond to requests with
+// filtered apartment data by the user's request.
 
 import { Console } from 'console';
 import express from 'express'
@@ -8,7 +11,7 @@ const isEmptyObject = (object) => {
 }
 
 
-// create a new post
+// Create a new apartment post
 router.post('/api/post', async function(req, res) {
   try {
    const {placeName, area, size, distanceAway, price, description, leasingterm, roommates, features, image} = req.body;
@@ -27,7 +30,7 @@ router.post('/api/post', async function(req, res) {
   }
 })
 
-// gets all posts or filters by passed params
+// Gets all posts or filters by passed params
 router.get('/api/post', async function(req, res) {
   try {
 
@@ -45,7 +48,6 @@ router.get('/api/post', async function(req, res) {
           { size: { $lte: maxSize || 1000000, $gte: minSize || 0 } }
         ]
       })
-      console.log(filteredPosts)
       res.json({"status": "success", "data": filteredPosts})
     }
 

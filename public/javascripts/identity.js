@@ -1,15 +1,11 @@
+// Check if a user is logged in or logged out.
+// Allow the user access to their profile
+// if they are logged in.
+
 let myIdentity = undefined;
 
-const escapeHTML = str => str.replace(/[&<>'"]/g,
-  tag => ({
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      "'": '&#39;',
-      '"': '&quot;'
-    }[tag]));
 
-// Change from login to logout button in landing
+// Change from login to logout button in landing page.
 async function loadIdentity(){
   let identityInfo
   try{
@@ -23,30 +19,26 @@ async function loadIdentity(){
   }
 
   let identity_div = document.getElementById("identity_div");
-  if(identityInfo.status == "error"){
+  if(identityInfo.status == "error") {
       myIdentity = undefined;
       identity_div.innerHTML = `<div>
       <button onclick="loadIdentity()">retry</button>
-      Error loading identity: <span id="identity_error_span"></span>
       </div>`;
-  } else if(identityInfo.status == "loggedin"){
+  } else if(identityInfo.status == "loggedin") {
       myIdentity = identityInfo.userInfo.username;
       identity_div.innerHTML = `
       <p>${identityInfo.userInfo.name} (${identityInfo.userInfo.username})</p>
       <a href="signout" class="btn btn-danger" role="button">Log out</a>`;
       saveUser(identityInfo.userInfo.username);
-  } else { //loggedout
+  } else { // loggedout
       myIdentity = undefined;
       identity_div.innerHTML = `
       <a href="signin" class="btn btn-primary" role="button">Log in</a>`;
   }
 }
 
-// Save unique users to the database
+// Save unique users to the database on login.
 async function saveUser(identity) {
-  // const urlParams = new URLSearchParams(window.location.search); //switch back later for sessions
-  // const username = urlParams.get('user');
-  // let username = "test another user"
   let username = identity;
   try {
       let response = await fetch(`/users`, {
@@ -64,13 +56,13 @@ async function saveUser(identity) {
   }
 }
 
-// Hide saved listings button when not logged in
+// Hide saved listings button when the user is not logged in.
 async function loadListings(){
   let identityInfo
   try{
       let response = await fetch(`users/getIdentity`);
       identityInfo = await response.json();
-  }catch(error){
+  } catch(error) {
       identityInfo =  {
           status: "error",
           error: "There was an error: " + error

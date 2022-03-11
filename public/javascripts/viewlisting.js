@@ -111,7 +111,7 @@ async function fetchListings() {
 
 
 
-// Filter apartment listings
+// Filter apartment listings code
 function filterListings (event) {
     event.preventDefault();
     const priceFilter = document.getElementById('priceFilter').value;

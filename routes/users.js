@@ -36,7 +36,7 @@ router.get('/', async function(req, res, next) {
   }
 });
 
-// Get html for a url.
+// Get html for an apartment card.
 async function getHtml(apt) {
   try {
     let htmlReturn = ""

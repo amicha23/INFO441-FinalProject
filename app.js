@@ -19,7 +19,7 @@ const appSettings = {
     clientSecret: "V5-7Q~tW~4_trwW6kmH9HSPx0lkIxi~4JSQc9"
   },
   authRoutes: {
-    redirect: "/redirect",
+    redirect: " https://faayfinal441.azurewebsites.net/landing.html/redirect",
     error: "/error",
     unauthorized: "/unauthorized"
   }
